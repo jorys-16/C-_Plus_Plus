@@ -3,6 +3,16 @@
 
 Welcome to my centralized C++ and Data Structures repository. This repository tracks my coursework, auto-graded **zyBooks** labs, textbook programming challenges (*Starting Out with C++* & *Data Structures Using C++*), and custom Abstract Data Type (ADT) implementations across my undergraduate progression at BMCC (CUNY)[cite: 1, 4, 8].
 
+## Course Materials
+
+Course syllabi and saved zyBooks activity pages are organized in each course's `course-materials` folder:
+
+- `01-CSC111-Intro-to-CPP/course-materials/`
+- `02-CSC211H-Advanced-CPP/course-materials/`
+- `03-CSC331-Data-Structures/course-materials/`
+
+The *Starting Out with C++* chapter PDFs are stored in the matching chapter's `book` subfolder. Chapters used by more than one course are copied into each applicable course folder.
+
 ---
 
 ## 📊 Course Dependency & Resource Flowchart
