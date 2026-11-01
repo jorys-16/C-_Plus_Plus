@@ -1,0 +1,1778 @@
+<!doctype html><html><head><meta charset="utf-8"><title>16. Additional Labs: Pointers</title><style>body{font-family:Segoe UI,Arial,sans-serif;max-width:1100px;margin:2rem auto;padding:0 1rem;line-height:1.45}a{color:#0969da}.source{color:#666;font-size:.9rem}</style></head><body><h1>16. Additional Labs: Pointers</h1><p class="source">Extracted from CSC 211： Advanced Programming Techniques ｜ zyBooks.html. Activity links open zyBooks.</p><ul><li id=ember56 class="js-draggableObject draggable-object ember-view chapter-item expanded"><div class=toc-item>
+ <div class=toc-header-common>
+ <div class=chapter-item-content>
+ <div class="chapter-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox chapter-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=chapter-title-ember56 type=checkbox value=on>
+ </div>
+ <div class="chapter-info unused" id=chapter-title-ember56>
+ <span class=chapter-title>
+ 16.
+ Additional Labs: Pointers
+ </span>
+ </div>
+ </div>
+ <div class=chapter-action>
+ <div aria-label="Labs 0% complete " id=ember57 class="toc-item-action chapter-details-expand flex-row ember-view"> <div class="columnar-scores chapter">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLabs completion rate:" class="zb-chevron lab filled small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding expand-icon" aria-expanded=true aria-labelledby=chapter-title-ember56 type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ </div>
+ </div>
+ <div id=ember1561 class="sortable-objects ember-view section-list-container">
+ <ul class=section-list>
+ <li id=ember1562 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1562 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1562>
+ <a id=ember1563 class="ember-view section-title-link" canonical_section_guid=6ee4b0ff-deb7-4dc7-afa2-39e32ae77426 canonical_section_id=28885204 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/1>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.1
+ LAB: Warm up: Contacts
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1564 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1562 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1635 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=f83f8647-271e-4f4a-aba0-43d355bd82e4>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=ded5c065-15f4-4a40-9564-c4986da5dad0 class="ember-view activity-label" aria-label="Lab activity 1.16: LAB: Warm up: Contacts Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/1?content_resource_id=122087111">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1565 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1565 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1565>
+ <a id=ember1566 class="ember-view section-title-link" canonical_section_guid=e2ff81b5-ecce-4439-9c9c-110f912c7022 canonical_section_id=28885222 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/2>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.2
+ LAB*: Program: Playlist
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1567 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1565 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1636 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=d2469eb2-ea6f-477b-8f60-c02d98c819ab>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=d09aae06-8bef-47b1-b599-1ee19c0a3fd6 class="ember-view activity-label" aria-label="Lab activity 2.16: LAB*: Program: Playlist Student score: 0 / 27 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/2?content_resource_id=122087129">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 27 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1568 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1568 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1568>
+ <a id=ember1569 class="ember-view section-title-link" canonical_section_guid=c9f448bf-ad19-41c8-be51-6184dea3df75 canonical_section_id=28886415 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/3>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.3
+ LAB: Find max in list
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1570 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1568 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1637 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=cc21963e-916c-41d4-b728-535cd07e862c>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=fc5d3158-58a1-4647-94ec-53d1b17431b8 class="ember-view activity-label" aria-label="Lab activity 3.16: LAB: Find max in list Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/3?content_resource_id=122090237">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1571 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1571 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1571>
+ <a id=ember1572 class="ember-view section-title-link" canonical_section_guid=2d012c1e-e8eb-4fae-9014-c0df7c00e600 canonical_section_id=28886416 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/4>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.4
+ LAB: Index of list item
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1573 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1571 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1638 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=c29c276b-b6b2-4fcb-95af-3eb7ccf8381c>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=f7f22df0-8727-41c7-8f06-d0779d4e93cf class="ember-view activity-label" aria-label="Lab activity 4.16: LAB: Index of list item Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/4?content_resource_id=122090238">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1574 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1574 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1574>
+ <a id=ember1575 class="ember-view section-title-link" canonical_section_guid=a30e97aa-3461-4286-9ab4-a8fa8ef4f078 canonical_section_id=28886417 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/5>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.5
+ LAB: Is list sorted
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1576 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1574 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1639 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=d127dd9b-81e3-4b09-9735-00228b332f7c>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=f80819b9-42d9-404a-98b0-dfca2ecb40d3 class="ember-view activity-label" aria-label="Lab activity 5.16: LAB: Is list sorted Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/5?content_resource_id=122090239">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1577 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1577 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1577>
+ <a id=ember1578 class="ember-view section-title-link" canonical_section_guid=9cfe8a7b-db0e-4902-b2e6-e961e5367536 canonical_section_id=28886418 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/6>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.6
+ LAB: List count
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1579 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1577 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1640 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=c54d964f-f7d6-4328-8b6b-1fdd6fcaf067>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=d88c1da4-789c-4e49-877e-6e99a2b3d2b9 class="ember-view activity-label" aria-label="Lab activity 6.16: LAB: List count Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/6?content_resource_id=122090240">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1580 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1580 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1580>
+ <a id=ember1581 class="ember-view section-title-link" canonical_section_guid=a3be6312-d482-4f6f-bb31-0105065dfb9a canonical_section_id=28885200 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/7>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.7
+ LAB: Find max in list
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1582 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1580 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1641 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=eb7ed77f-9419-40b5-8c0f-9e35aeb40e0d>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=fdc750d1-7edb-4838-81d0-306035adfea1 class="ember-view activity-label" aria-label="Lab activity 7.16: LAB: Find max in list Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/7?content_resource_id=122087107">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1583 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1583 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1583>
+ <a id=ember1584 class="ember-view section-title-link" canonical_section_guid=e7f91360-82c1-488a-a6fa-392e6fede6e1 canonical_section_id=28885201 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/8>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.8
+ LAB: Index of list item
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1585 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1583 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1642 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=ed7e55a6-eaa4-416b-931b-d15cb1d1233f>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=f3129e99-d82e-4ef9-b98e-e9e72c12455a class="ember-view activity-label" aria-label="Lab activity 8.16: LAB: Index of list item Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/8?content_resource_id=122087108">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1586 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1586 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1586>
+ <a id=ember1587 class="ember-view section-title-link" canonical_section_guid=ae9f3ea6-b423-4dec-b95c-5a800ddeadd4 canonical_section_id=28885202 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/9>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.9
+ LAB: Is list sorted
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1588 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1586 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1643 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=f3f0686b-fecd-407a-9289-0791263fa094>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=cf99a016-d4ed-44f4-808d-d21e0cf65c4f class="ember-view activity-label" aria-label="Lab activity 9.16: LAB: Is list sorted Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/9?content_resource_id=122087109">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1589 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1589 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1589>
+ <a id=ember1590 class="ember-view section-title-link" canonical_section_guid=e48fce05-42f9-41c1-b3cc-4c7d1953a32e canonical_section_id=28885203 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/10>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.10
+ LAB: List count
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1591 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1589 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1644 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=ff8da7e2-573a-44b1-8e16-bd88dffdf0f1>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=fb0cb645-3fa1-48c2-a9ae-40095948727b class="ember-view activity-label" aria-label="Lab activity 10.16: LAB: List count Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/10?content_resource_id=122087110">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1592 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1592 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1592>
+ <a id=ember1593 class="ember-view section-title-link" canonical_section_guid=14659913-7e4d-44ee-85b0-37b3c9ed6147 canonical_section_id=28886419 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/11>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.11
+ LAB: Phone number string breakdown
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1594 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1592 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1645 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=ca75736f-c4f1-415c-aa95-a83b256d4ece>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=e1a7a932-547a-427c-95b9-92313a6848f0 class="ember-view activity-label" aria-label="Lab activity 11.16: LAB: Phone number string breakdown Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/11?content_resource_id=122090241">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1595 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1595 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1595>
+ <a id=ember1596 class="ember-view section-title-link" canonical_section_guid=d4fc641b-2161-4723-83b5-c8f32d2f42d2 canonical_section_id=28885246 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/12>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.12
+ LAB: Capitalizing vowels
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1597 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1595 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1646 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=ea4af4f3-ce1e-40f9-b3cf-fc95602b1dff>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=d42a4d33-bd21-4176-a619-c28409567ecc class="ember-view activity-label" aria-label="Lab activity 12.16: LAB: Capitalizing vowels Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/12?content_resource_id=122087153">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1598 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1598 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1598>
+ <a id=ember1599 class="ember-view section-title-link" canonical_section_guid=e2e9b745-46bb-4029-b8e0-86a0e0d7ce22 canonical_section_id=28885178 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/13>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.13
+ LAB: Swap two numbers
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1600 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1598 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1647 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=d1453c60-c02f-4cd7-bef5-7028991aeac5>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=cfe20504-9636-4d5f-9753-d238c4408c02 class="ember-view activity-label" aria-label="Lab activity 13.16: LAB: Swap two numbers Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/13?content_resource_id=122087085">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1601 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1601 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1601>
+ <a id=ember1602 class="ember-view section-title-link" canonical_section_guid=bb78bc23-a457-4cc9-8f02-5fc25bdccf09 canonical_section_id=28885247 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/14>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.14
+ LAB: State ID renewal (Copy constructor)
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1603 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1601 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1648 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=db956773-0ba5-40a3-bf6f-a3e5a4fa164a>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=eb867a06-c4a7-42f9-b9d4-27cf000a6911 class="ember-view activity-label" aria-label="Lab activity 14.16: LAB: State ID renewal (Copy constructor) Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/14?content_resource_id=122087154">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1604 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1604 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1604>
+ <a id=ember1605 class="ember-view section-title-link" canonical_section_guid=23aee0db-b840-45c5-b722-52fb30ceb061 canonical_section_id=28885248 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/15>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.15
+ LAB: State ID renewal (Copy assignment)
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1606 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1604 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1649 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=f4fcb0fb-13ff-4009-8ec3-9fa9df249374>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=fb5bb7f7-c111-49cf-a837-eec28b36f696 class="ember-view activity-label" aria-label="Lab activity 15.16: LAB: State ID renewal (Copy assignment) Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/15?content_resource_id=122087155">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1607 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1607 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1607>
+ <a id=ember1608 class="ember-view section-title-link" canonical_section_guid=4f6463f9-b33e-4837-9e1b-d7b1e65b77b8 canonical_section_id=28885249 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/16>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.16
+ LAB: Mad Lib (Pointers)
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1609 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1607 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1650 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=ee590b89-c6be-48d7-ba25-7d5b1c25f378>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=d48dd233-98f8-4cf6-86d3-73f95633cd96 class="ember-view activity-label" aria-label="Lab activity 16.16: LAB: Mad Lib (Pointers) Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/16?content_resource_id=122087156">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1610 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1610 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1610>
+ <a id=ember1611 class="ember-view section-title-link" canonical_section_guid=85b9e4ec-b046-49a6-84d4-343c274532f4 canonical_section_id=28885250 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/17>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.17
+ LAB: Class enrollment
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1612 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1610 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1651 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=f0e24897-bb4c-45dd-adcd-8e38baf8154f>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=df6c5ed7-cd90-4b24-9e0b-631f6776d894 class="ember-view activity-label" aria-label="Lab activity 17.16: LAB: Class enrollment Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/17?content_resource_id=122087157">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1613 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1613 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1613>
+ <a id=ember1614 class="ember-view section-title-link" canonical_section_guid=91502619-e21d-4ce8-8362-0c249644ea52 canonical_section_id=28885251 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/18>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.18
+ LAB: Class statistics
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1615 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1613 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1652 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=f31b0478-bbd9-4739-8755-9396ce902578>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=dc9ca780-06f7-4965-8b0f-0cf8533871e3 class="ember-view activity-label" aria-label="Lab activity 18.16: LAB: Class statistics Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/18?content_resource_id=122087158">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1616 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1616 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1616>
+ <a id=ember1617 class="ember-view section-title-link" canonical_section_guid=d698bea5-1e3f-46c8-969a-22ba65496bd7 canonical_section_id=28885252 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/19>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.19
+ LAB: Every other letter
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1618 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1616 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1653 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=d68d1103-997a-403c-91cf-c26a1f66b17c>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=db8772ec-0e2c-466f-9cdd-807c56184042 class="ember-view activity-label" aria-label="Lab activity 19.16: LAB: Every other letter Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/19?content_resource_id=122087159">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1619 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1619 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1619>
+ <a id=ember1620 class="ember-view section-title-link" canonical_section_guid=7373bef3-a7bf-472a-aca0-a767aef8fdcb canonical_section_id=28885253 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/20>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.20
+ LAB: Filter array values
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1621 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1619 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1654 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=d50e319a-0f4a-4664-9fef-8fa64121389f>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=f6630171-cccd-45ea-b015-a713b0d73027 class="ember-view activity-label" aria-label="Lab activity 20.16: LAB: Filter array values Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/20?content_resource_id=122087160">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1622 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1622 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1622>
+ <a id=ember1623 class="ember-view section-title-link" canonical_section_guid=5e67b6d5-3763-48ad-a1a2-7e4ded840452 canonical_section_id=28885254 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/21>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.21
+ LAB: Student GPA
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1624 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1622 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1655 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=cc6fbe27-8828-4304-9fe8-e9c52132f4d9>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=edeeeb00-82b3-4fb7-bb5f-0a9b24fc55f2 class="ember-view activity-label" aria-label="Lab activity 21.16: LAB: Student GPA Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/21?content_resource_id=122087161">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1625 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1625 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1625>
+ <a id=ember1626 class="ember-view section-title-link" canonical_section_guid=20686951-41c1-431e-aced-ee06c0b2e07a canonical_section_id=28885255 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/22>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.22
+ LAB: Update GPA
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1627 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1625 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1656 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=c46e4943-a488-4a02-af77-9cde6d443f8d>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=c582372f-8135-4e27-8102-cc0693ffdee3 class="ember-view activity-label" aria-label="Lab activity 22.16: LAB: Update GPA Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/22?content_resource_id=122087162">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1628 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1628 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1628>
+ <a id=ember1629 class="ember-view section-title-link" canonical_section_guid=585baf68-6918-4f7d-bae6-ea9c287329f0 canonical_section_id=28885256 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/23>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.23
+ LAB: Add a student
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1630 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1628 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1657 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=fc540cb2-461b-4d40-bedc-696b9a078b70>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=ca7e71bc-a353-4c0a-85a4-2a64815035ce class="ember-view activity-label" aria-label="Lab activity 23.16: LAB: Add a student Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/23?content_resource_id=122087163">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1631 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1631 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1631>
+ <a id=ember1632 class="ember-view section-title-link" canonical_section_guid=88d170e6-4119-4176-b89f-f11a5aa75630 canonical_section_id=28885177 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/24>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 16.24
+ LAB: BankAccount class
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1633 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1631 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1658 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=e099adbe-4741-4547-894f-da2ccda96781>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=fa8852f7-f418-4a9a-9e7f-e20bc2f1fa9a class="ember-view activity-label" aria-label="Lab activity 24.16: LAB: BankAccount class Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/section/24?content_resource_id=122087084">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ </ul>
+ </div>
+ <div class="toc-header-common chapter-actions">
+ <div class=chapter-item-content>
+ <a id=ember1634 class="ember-view action" target=_blank href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/16/print>
+ <i aria-label=print class="zb-icon material-symbols-outlined med blue item-bullet" role=img aria-hidden=true>
+ print
+</i>
+ <span class=title>Print chapter</span>
+ </a>
+ </div>
+ </div>
+</div></li>
+ </ul></body></html>

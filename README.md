@@ -13,6 +13,8 @@ Course syllabi and saved zyBooks activity pages are organized in each course's `
 
 The *Starting Out with C++* chapter PDFs are stored in the matching chapter's `book` subfolder. Chapters used by more than one course are copied into each applicable course folder.
 
+The zyBooks activity pages are preserved in each course's `course-materials` folder and split into chapter-specific resource pages in the matching `zylabs` folders.
+
 ---
 
 ## 📊 Course Dependency & Resource Flowchart

@@ -1,0 +1,3334 @@
+<!doctype html><html><head><meta charset="utf-8"><title>8. Pointers</title><style>body{font-family:Segoe UI,Arial,sans-serif;max-width:1100px;margin:2rem auto;padding:0 1rem;line-height:1.45}a{color:#0969da}.source{color:#666;font-size:.9rem}</style></head><body><h1>8. Pointers</h1><p class="source">Extracted from CSC 211： Advanced Programming Techniques ｜ zyBooks.html. Activity links open zyBooks.</p><ul><li id=ember40 class="js-draggableObject draggable-object ember-view chapter-item expanded"><div class=toc-item>
+ <div class=toc-header-common>
+ <div class=chapter-item-content>
+ <div class="chapter-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox chapter-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=chapter-title-ember40 type=checkbox value=on>
+ </div>
+ <div class="chapter-info unused" id=chapter-title-ember40>
+ <span class=chapter-title>
+ 8.
+ Pointers
+ </span>
+ </div>
+ </div>
+ <div class=chapter-action>
+ <div aria-label="Labs 0% complete challenges 0% complete participations 0% complete " id=ember41 class="toc-item-action chapter-details-expand flex-row ember-view"> <div class="columnar-scores chapter">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLabs completion rate:" class="zb-chevron lab filled small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding expand-icon" aria-expanded=true aria-labelledby=chapter-title-ember40 type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ </div>
+ </div>
+ <div id=ember861 class="sortable-objects ember-view section-list-container">
+ <ul class=section-list>
+ <li id=ember862 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember862 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember862>
+ <a id=ember863 class="ember-view section-title-link" canonical_section_guid=d075498b-14d4-10dd-a801-cb7a54870cd3cpp canonical_section_id=29519671 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/1>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.1
+ Pointers (General)
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember864 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember862 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember933 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=f0718ea1-16c5-429e-b4de-0d0a8f7f6956>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=d4cad7ce-f9b1-408d-a2f3-7ca2bc1dcfba class="ember-view activity-label" aria-label="Participation activity 8.1.1: Fixed-size arrays have limited usefulness. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/1?content_resource_id=122083958">
+ 8.1.1: Fixed-size arrays have limited usefulness.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d99465df-4fa4-4eeb-9dee-68a66cc99e61>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d4cad7ce-f9b1-408d-a2f3-7ca2bc1dcfba class="ember-view activity-label" aria-label="Participation activity 8.1.2: Handling different amounts of data. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/1?content_resource_id=122083963">
+ 8.1.2: Handling different amounts of data.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d99465df-4fa4-4eeb-9dee-68a66cc99e61>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d4cad7ce-f9b1-408d-a2f3-7ca2bc1dcfba class="ember-view activity-label" aria-label="Participation activity 8.1.3: Pointers and dynamically allocated data. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/1?content_resource_id=122083961">
+ 8.1.3: Pointers and dynamically allocated data.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d99465df-4fa4-4eeb-9dee-68a66cc99e61>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d4cad7ce-f9b1-408d-a2f3-7ca2bc1dcfba class="ember-view activity-label" aria-label="Participation activity 8.1.4: Dynamically allocated arrays. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/1?content_resource_id=122083964">
+ 8.1.4: Dynamically allocated arrays.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d99465df-4fa4-4eeb-9dee-68a66cc99e61>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d4cad7ce-f9b1-408d-a2f3-7ca2bc1dcfba class="ember-view activity-label" aria-label="Participation activity 8.1.5: Inserting data in array vs. linked list. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/1?content_resource_id=122083962">
+ 8.1.5: Inserting data in array vs. linked list.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d99465df-4fa4-4eeb-9dee-68a66cc99e61>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d4cad7ce-f9b1-408d-a2f3-7ca2bc1dcfba class="ember-view activity-label" aria-label="Participation activity 8.1.6: Inserting and removing items in arrays/vectors vs. linked lists. 5 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/1?content_resource_id=122083960">
+ 8.1.6: Inserting and removing items in arrays/vectors vs. linked lists.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d99465df-4fa4-4eeb-9dee-68a66cc99e61>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember865 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember865 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember865>
+ <a id=ember866 class="ember-view section-title-link" canonical_section_guid=6fc1a9a3-b4d9-40d2-a7c3-1e5aab6217d7cpp canonical_section_id=29519672 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/2>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.2
+ Pointers and dynamically allocated arrays
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember867 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember865 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember934 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=edd3a99a-cac2-45a2-ad9d-d9c872b191bc>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=d86b4c48-7862-43a1-b02b-87fcfc1e38e4 class="ember-view activity-label" aria-label="Participation activity 8.2.1: Dynamically allocated array. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/2?content_resource_id=122083967">
+ 8.2.1: Dynamically allocated array.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d6a949fb-b800-4866-b443-9eb1d81acf26>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d86b4c48-7862-43a1-b02b-87fcfc1e38e4 class="ember-view activity-label" aria-label="Participation activity 8.2.2: Using pointer. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/2?content_resource_id=122083968">
+ 8.2.2: Using pointer.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d6a949fb-b800-4866-b443-9eb1d81acf26>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d86b4c48-7862-43a1-b02b-87fcfc1e38e4 class="ember-view activity-label" aria-label="Participation activity 8.2.3: Accessing elements in a dynamically allocated array. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/2?content_resource_id=122083972">
+ 8.2.3: Accessing elements in a dynamically allocated array.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d6a949fb-b800-4866-b443-9eb1d81acf26>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d86b4c48-7862-43a1-b02b-87fcfc1e38e4 class="ember-view activity-label" aria-label="Participation activity 8.2.4: Navigating a dynamically allocated array. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/2?content_resource_id=122083973">
+ 8.2.4: Navigating a dynamically allocated array.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d6a949fb-b800-4866-b443-9eb1d81acf26>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d86b4c48-7862-43a1-b02b-87fcfc1e38e4 class="ember-view activity-label" aria-label="Participation activity 8.2.5: Deleting dynamically allocated array. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/2?content_resource_id=122083976">
+ 8.2.5: Deleting dynamically allocated array.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d6a949fb-b800-4866-b443-9eb1d81acf26>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d86b4c48-7862-43a1-b02b-87fcfc1e38e4 class="ember-view activity-label" aria-label="Participation activity 8.2.6: Deallocating a dynamically allocated array. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/2?content_resource_id=122083977">
+ 8.2.6: Deallocating a dynamically allocated array.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d6a949fb-b800-4866-b443-9eb1d81acf26>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d86b4c48-7862-43a1-b02b-87fcfc1e38e4 class="ember-view activity-label" aria-label="Participation activity 8.2.7: More about deallocating a dynamically allocated array. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/2?content_resource_id=122083981">
+ 8.2.7: More about deallocating a dynamically allocated array.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d6a949fb-b800-4866-b443-9eb1d81acf26>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d86b4c48-7862-43a1-b02b-87fcfc1e38e4 class="ember-view activity-label" aria-label="Participation activity 8.2.8: nullptr. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/2?content_resource_id=122083985">
+ 8.2.8: nullptr.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d6a949fb-b800-4866-b443-9eb1d81acf26>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=f182f951-7687-405e-bb3a-c9ad91de410d>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=f671d3c1-7b48-48ff-ab1d-a0692841018d class="ember-view activity-label" aria-label="Challenge activity 8.2.1: Pointers and dynamically allocated arrays. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/2?content_resource_id=122083987">
+ 8.2.1: Pointers and dynamically allocated arrays.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=dab04d49-a6b8-4999-9cd1-c89f97c365f6>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember868 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember868 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember868>
+ <a id=ember869 class="ember-view section-title-link" canonical_section_guid=cdf497f6-a3c8-48b3-a199-ad0b275973accpp canonical_section_id=29519673 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/3>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.3
+ Changing the size of a dynamically allocated array
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember870 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember868 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember935 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=df9204d4-d8a9-4aaa-afc9-25297e43b229>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=c009dd98-7361-42d6-94bc-6e78bb41fb04 class="ember-view activity-label" aria-label="Participation activity 8.3.1: Increasing an array's size by one to append one more element. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/3?content_resource_id=122083991">
+ 8.3.1: Increasing an array's size by one to append one more element.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e7f54415-9eb9-46f5-9589-aa6e19bf62cd>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c009dd98-7361-42d6-94bc-6e78bb41fb04 class="ember-view activity-label" aria-label="Participation activity 8.3.2: Appending a new element to an array. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/3?content_resource_id=122083992">
+ 8.3.2: Appending a new element to an array.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e7f54415-9eb9-46f5-9589-aa6e19bf62cd>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c009dd98-7361-42d6-94bc-6e78bb41fb04 class="ember-view activity-label" aria-label="Participation activity 8.3.3: Appending an array to a dynamically allocated array. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/3?content_resource_id=122083995">
+ 8.3.3: Appending an array to a dynamically allocated array.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e7f54415-9eb9-46f5-9589-aa6e19bf62cd>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c009dd98-7361-42d6-94bc-6e78bb41fb04 class="ember-view activity-label" aria-label="Participation activity 8.3.4: How to correctly append todaysHrs to sleepHrs. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/3?content_resource_id=122083996">
+ 8.3.4: How to correctly append todaysHrs to sleepHrs.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e7f54415-9eb9-46f5-9589-aa6e19bf62cd>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c009dd98-7361-42d6-94bc-6e78bb41fb04 class="ember-view activity-label" aria-label="Participation activity 8.3.5: Expanding an array to append another array. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/3?content_resource_id=122083999">
+ 8.3.5: Expanding an array to append another array.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e7f54415-9eb9-46f5-9589-aa6e19bf62cd>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c009dd98-7361-42d6-94bc-6e78bb41fb04 class="ember-view activity-label" aria-label="Participation activity 8.3.6: Array capacity expansion. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/3?content_resource_id=122084001">
+ 8.3.6: Array capacity expansion.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e7f54415-9eb9-46f5-9589-aa6e19bf62cd>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c009dd98-7361-42d6-94bc-6e78bb41fb04 class="ember-view activity-label" aria-label="Participation activity 8.3.7: Deleting elements from an array without changing the array's capacity. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/3?content_resource_id=122084004">
+ 8.3.7: Deleting elements from an array without changing the array's capacity.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e7f54415-9eb9-46f5-9589-aa6e19bf62cd>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c009dd98-7361-42d6-94bc-6e78bb41fb04 class="ember-view activity-label" aria-label="Participation activity 8.3.8: More about array deletion. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/3?content_resource_id=122084005">
+ 8.3.8: More about array deletion.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e7f54415-9eb9-46f5-9589-aa6e19bf62cd>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=e51a64d3-d6b5-468d-a2b9-a52465a74973>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=cf253ab4-e383-48a6-b867-af11f3b83d78 class="ember-view activity-label" aria-label="Challenge activity 8.3.1: Changing the size of a dynamically allocated array. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/3?content_resource_id=122084006">
+ 8.3.1: Changing the size of a dynamically allocated array.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f2f594db-e92f-42bc-8113-fdf0475cd264>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember871 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember871 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember871>
+ <a id=ember872 class="ember-view section-title-link" canonical_section_guid=84a9b167-8216-8201-7bcc-be8833a6411dcpp canonical_section_id=29519674 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/4>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.4
+ Dynamically allocating objects
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember873 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember871 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember936 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=fc811147-b3c4-4a31-bbf0-8e54be790472>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=c6e73a06-aa3b-4898-94a2-d913bf1f99cd class="ember-view activity-label" aria-label="Participation activity 8.4.1: Dynamically allocating a Sleep object. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/4?content_resource_id=122084010">
+ 8.4.1: Dynamically allocating a Sleep object.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e5c548dc-e9d2-453c-ab00-fe61a7bcb900>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c6e73a06-aa3b-4898-94a2-d913bf1f99cd class="ember-view activity-label" aria-label="Participation activity 8.4.2: Three important things in the dynamic allocation of objects. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/4?content_resource_id=122084011">
+ 8.4.2: Three important things in the dynamic allocation of objects.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e5c548dc-e9d2-453c-ab00-fe61a7bcb900>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c6e73a06-aa3b-4898-94a2-d913bf1f99cd class="ember-view activity-label" aria-label="Participation activity 8.4.3: More about the new operator. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/4?content_resource_id=122084012">
+ 8.4.3: More about the new operator.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e5c548dc-e9d2-453c-ab00-fe61a7bcb900>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c6e73a06-aa3b-4898-94a2-d913bf1f99cd class="ember-view activity-label" aria-label="Participation activity 8.4.4: Passing arguments to the Sleep Constructor. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/4?content_resource_id=122084015">
+ 8.4.4: Passing arguments to the Sleep Constructor.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e5c548dc-e9d2-453c-ab00-fe61a7bcb900>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c6e73a06-aa3b-4898-94a2-d913bf1f99cd class="ember-view activity-label" aria-label="Participation activity 8.4.5: Passing arguments to a constructor. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/4?content_resource_id=122084016">
+ 8.4.5: Passing arguments to a constructor.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e5c548dc-e9d2-453c-ab00-fe61a7bcb900>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c6e73a06-aa3b-4898-94a2-d913bf1f99cd class="ember-view activity-label" aria-label="Participation activity 8.4.6: Using member access operator to call member function. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/4?content_resource_id=122084019">
+ 8.4.6: Using member access operator to call member function.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e5c548dc-e9d2-453c-ab00-fe61a7bcb900>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c6e73a06-aa3b-4898-94a2-d913bf1f99cd class="ember-view activity-label" aria-label="Participation activity 8.4.7: Using the member access operator. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/4?content_resource_id=122084020">
+ 8.4.7: Using the member access operator.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e5c548dc-e9d2-453c-ab00-fe61a7bcb900>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c6e73a06-aa3b-4898-94a2-d913bf1f99cd class="ember-view activity-label" aria-label="Participation activity 8.4.8: How to use the dereference operator. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/4?content_resource_id=122084024">
+ 8.4.8: How to use the dereference operator.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e5c548dc-e9d2-453c-ab00-fe61a7bcb900>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c6e73a06-aa3b-4898-94a2-d913bf1f99cd class="ember-view activity-label" aria-label="Participation activity 8.4.9: The delete operator. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/4?content_resource_id=122084029">
+ 8.4.9: The delete operator.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e5c548dc-e9d2-453c-ab00-fe61a7bcb900>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=c65a3e9e-25a2-4f64-89ae-a1bc4f19414c>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=c0cac709-a49a-4b01-b2f4-d04ae67c8536 class="ember-view activity-label" aria-label="Challenge activity 8.4.1: Dynamically allocating objects. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/4?content_resource_id=122084007">
+ 8.4.1: Dynamically allocating objects.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d05422cf-8185-4b61-b7b8-39f70271eb72>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember874 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember874 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember874>
+ <a id=ember875 class="ember-view section-title-link" canonical_section_guid=3eb27271-df64-490e-8b2a-caf88f4c7783cpp canonical_section_id=29519675 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/5>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.5
+ Allocating arrays of objects
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember876 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember874 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember937 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=d6044ee4-8cad-4b1d-b95b-369c16bd03d5>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=f4986e59-2369-4b7d-a47b-3dfa27054687 class="ember-view activity-label" aria-label="Participation activity 8.5.1: Allocating an array of BloodPressure objects. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/5?content_resource_id=122084032">
+ 8.5.1: Allocating an array of BloodPressure objects.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=dd21efe2-8c4c-49e7-8e49-4d8e29b2f8bf>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f4986e59-2369-4b7d-a47b-3dfa27054687 class="ember-view activity-label" aria-label="Participation activity 8.5.2: Allocating arrays of objects. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/5?content_resource_id=122084033">
+ 8.5.2: Allocating arrays of objects.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=dd21efe2-8c4c-49e7-8e49-4d8e29b2f8bf>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f4986e59-2369-4b7d-a47b-3dfa27054687 class="ember-view activity-label" aria-label="Participation activity 8.5.3: Printing each BloodPressure object in an array. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/5?content_resource_id=122084036">
+ 8.5.3: Printing each BloodPressure object in an array.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=dd21efe2-8c4c-49e7-8e49-4d8e29b2f8bf>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f4986e59-2369-4b7d-a47b-3dfa27054687 class="ember-view activity-label" aria-label="Participation activity 8.5.4: Elements in a dynamically allocated array of objects. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/5?content_resource_id=122084037">
+ 8.5.4: Elements in a dynamically allocated array of objects.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=dd21efe2-8c4c-49e7-8e49-4d8e29b2f8bf>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f4986e59-2369-4b7d-a47b-3dfa27054687 class="ember-view activity-label" aria-label="Participation activity 8.5.5: Deallocating an array of objects. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/5?content_resource_id=122084041">
+ 8.5.5: Deallocating an array of objects.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=dd21efe2-8c4c-49e7-8e49-4d8e29b2f8bf>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=ec92cab3-0915-40ef-96a9-27c18913000d>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=f4292927-8c26-414e-a0c3-22e836f0a0a2 class="ember-view activity-label" aria-label="Challenge activity 8.5.1: Allocating arrays of objects. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/5?content_resource_id=122084043">
+ 8.5.1: Allocating arrays of objects.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d4426e8f-1dc0-4a8c-ab67-86c4c2f66535>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember877 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember877 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember877>
+ <a id=ember878 class="ember-view section-title-link" canonical_section_guid=dbd19e03-cdde-4ba1-987b-85b5765c0685cpp canonical_section_id=29519676 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/6>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.6
+ Classes with dynamically allocated data
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember879 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember877 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember938 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=d8f8611e-dff0-4010-99b0-c897d790a4c3>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=fe18181f-88c4-4acf-b514-873d1fb0a711 class="ember-view activity-label" aria-label="Participation activity 8.6.1: The Activity class and ActivityTracker class. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/6?content_resource_id=122084046">
+ 8.6.1: The Activity class and ActivityTracker class.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e79d945d-ff15-4082-8da2-9d403dff41e0>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fe18181f-88c4-4acf-b514-873d1fb0a711 class="ember-view activity-label" aria-label="Participation activity 8.6.2: About the ActivitiesTracker class' activities, activitiesSize and activitiesCapacity. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/6?content_resource_id=122084047">
+ 8.6.2: About the ActivitiesTracker class' activities, activitiesSize and activitiesCapacity.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e79d945d-ff15-4082-8da2-9d403dff41e0>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fe18181f-88c4-4acf-b514-873d1fb0a711 class="ember-view activity-label" aria-label="Participation activity 8.6.3: Initializing an ActivityTracker object. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/6?content_resource_id=122084050">
+ 8.6.3: Initializing an ActivityTracker object.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e79d945d-ff15-4082-8da2-9d403dff41e0>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fe18181f-88c4-4acf-b514-873d1fb0a711 class="ember-view activity-label" aria-label="Participation activity 8.6.4: Initializing the dynamically allocated array in ActivityTracker. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/6?content_resource_id=122084051">
+ 8.6.4: Initializing the dynamically allocated array in ActivityTracker.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e79d945d-ff15-4082-8da2-9d403dff41e0>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fe18181f-88c4-4acf-b514-873d1fb0a711 class="ember-view activity-label" aria-label="Participation activity 8.6.5: Increasing array capacity. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/6?content_resource_id=122084054">
+ 8.6.5: Increasing array capacity.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e79d945d-ff15-4082-8da2-9d403dff41e0>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fe18181f-88c4-4acf-b514-873d1fb0a711 class="ember-view activity-label" aria-label="Participation activity 8.6.6: Increasing array capacity. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/6?content_resource_id=122084055">
+ 8.6.6: Increasing array capacity.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e79d945d-ff15-4082-8da2-9d403dff41e0>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fe18181f-88c4-4acf-b514-873d1fb0a711 class="ember-view activity-label" aria-label="Participation activity 8.6.7: Using the activity tracker to collect data. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/6?content_resource_id=122084058">
+ 8.6.7: Using the activity tracker to collect data.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e79d945d-ff15-4082-8da2-9d403dff41e0>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fe18181f-88c4-4acf-b514-873d1fb0a711 class="ember-view activity-label" aria-label="Participation activity 8.6.8: Adding elements to activities. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/6?content_resource_id=122084059">
+ 8.6.8: Adding elements to activities.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e79d945d-ff15-4082-8da2-9d403dff41e0>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fe18181f-88c4-4acf-b514-873d1fb0a711 class="ember-view activity-label" aria-label="Participation activity 8.6.9: A function that calculates the number of steps walked per hour. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/6?content_resource_id=122084062">
+ 8.6.9: A function that calculates the number of steps walked per hour.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e79d945d-ff15-4082-8da2-9d403dff41e0>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fe18181f-88c4-4acf-b514-873d1fb0a711 class="ember-view activity-label" aria-label="Participation activity 8.6.10: Using the ActivityTracker class' member functions. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/6?content_resource_id=122084063">
+ 8.6.10: Using the ActivityTracker class' member functions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e79d945d-ff15-4082-8da2-9d403dff41e0>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=cf8e0066-2484-45ba-a210-4999a92dd94c>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=d210f8fc-7dd3-4a0f-8c7b-578460722e7c class="ember-view activity-label" aria-label="Challenge activity 8.6.1: Classes with dynamically allocated data. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/6?content_resource_id=122084065">
+ 8.6.1: Classes with dynamically allocated data.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=facd6551-1ae5-445f-95de-2d847c417e4a>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember880 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember880 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember880>
+ <a id=ember881 class="ember-view section-title-link" canonical_section_guid=49ba74e7-1a46-3a0b-0720-dc8bb72d1da6cpp canonical_section_id=29519677 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/7>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.7
+ String functions with pointers
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember882 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember880 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember939 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=cd37750b-514a-4798-999b-29a0694d8b42>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=cea8590a-d534-42ad-b2bf-99bf7f443092 class="ember-view activity-label" aria-label="Participation activity 8.7.1: strcmp() and strcpy() string functions. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/7?content_resource_id=122084068">
+ 8.7.1: strcmp() and strcpy() string functions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e851c6c2-9dec-4303-9395-1b068630b9ad>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=cea8590a-d534-42ad-b2bf-99bf7f443092 class="ember-view activity-label" aria-label="Participation activity 8.7.2: C string library functions. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/7?content_resource_id=122084069">
+ 8.7.2: C string library functions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e851c6c2-9dec-4303-9395-1b068630b9ad>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=cea8590a-d534-42ad-b2bf-99bf7f443092 class="ember-view activity-label" aria-label="Participation activity 8.7.3: C string search functions. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/7?content_resource_id=122084073">
+ 8.7.3: C string search functions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e851c6c2-9dec-4303-9395-1b068630b9ad>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=cea8590a-d534-42ad-b2bf-99bf7f443092 class="ember-view activity-label" aria-label="Participation activity 8.7.4: Modifying and searching strings. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/7?content_resource_id=122084077">
+ 8.7.4: Modifying and searching strings.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e851c6c2-9dec-4303-9395-1b068630b9ad>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=f06e00bb-09eb-4595-93e7-446be953b471>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=feb9fbb8-1b38-46b3-90ff-82545ffe0819 class="ember-view activity-label" aria-label="Challenge activity 8.7.1: Enter the output of the string functions. 5 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/7?content_resource_id=122084078">
+ 8.7.1: Enter the output of the string functions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d1dd2ea9-780d-4b5d-8b42-53aada6d9bbb>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item challenge">
+ <a id=feb9fbb8-1b38-46b3-90ff-82545ffe0819 class="ember-view activity-label" aria-label="Challenge activity 8.7.2: Find char in C string 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/7?content_resource_id=122084079">
+ 8.7.2: Find char in C string
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d1dd2ea9-780d-4b5d-8b42-53aada6d9bbb>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item challenge">
+ <a id=feb9fbb8-1b38-46b3-90ff-82545ffe0819 class="ember-view activity-label" aria-label="Challenge activity 8.7.3: Find C string in C string. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/7?content_resource_id=122084080">
+ 8.7.3: Find C string in C string.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d1dd2ea9-780d-4b5d-8b42-53aada6d9bbb>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember883 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember883 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember883>
+ <a id=ember884 class="ember-view section-title-link" canonical_section_guid=7943b9c6-5d65-4b9e-b060-8e0363b7d7aacpp canonical_section_id=29519687 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/8>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.8
+ Additional material: Why pointers?
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember885 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember883 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember940 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=c5b713eb-4347-4a28-881d-85db00b7f636>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=db122a92-8c81-45d6-a71a-8a84ae241ad6 class="ember-view activity-label" aria-label="Participation activity 8.8.1: Dynamically allocated arrays. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/8?content_resource_id=122084173">
+ 8.8.1: Dynamically allocated arrays.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d58d33fb-5105-46e1-85ed-9c06d82ed320>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=db122a92-8c81-45d6-a71a-8a84ae241ad6 class="ember-view activity-label" aria-label="Participation activity 8.8.2: Dynamically allocated arrays. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/8?content_resource_id=122084174">
+ 8.8.2: Dynamically allocated arrays.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d58d33fb-5105-46e1-85ed-9c06d82ed320>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=db122a92-8c81-45d6-a71a-8a84ae241ad6 class="ember-view activity-label" aria-label="Participation activity 8.8.3: Vector insert performance problem. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/8?content_resource_id=122084177">
+ 8.8.3: Vector insert performance problem.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d58d33fb-5105-46e1-85ed-9c06d82ed320>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=db122a92-8c81-45d6-a71a-8a84ae241ad6 class="ember-view activity-label" aria-label="Participation activity 8.8.4: A list avoids the shifting problem. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/8?content_resource_id=122084179">
+ 8.8.4: A list avoids the shifting problem.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d58d33fb-5105-46e1-85ed-9c06d82ed320>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=db122a92-8c81-45d6-a71a-8a84ae241ad6 class="ember-view activity-label" aria-label="Participation activity 8.8.5: Inserting/erasing in vectors vs. linked lists. 7 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/8?content_resource_id=122084182">
+ 8.8.5: Inserting/erasing in vectors vs. linked lists.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d58d33fb-5105-46e1-85ed-9c06d82ed320>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=db122a92-8c81-45d6-a71a-8a84ae241ad6 class="ember-view activity-label" aria-label="Participation activity 8.8.6: Pointers used to call class member functions. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/8?content_resource_id=122084185">
+ 8.8.6: Pointers used to call class member functions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d58d33fb-5105-46e1-85ed-9c06d82ed320>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=db122a92-8c81-45d6-a71a-8a84ae241ad6 class="ember-view activity-label" aria-label="Participation activity 8.8.7: The 'this' pointer. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/8?content_resource_id=122084186">
+ 8.8.7: The 'this' pointer.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d58d33fb-5105-46e1-85ed-9c06d82ed320>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember886 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember886 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember886>
+ <a id=ember887 class="ember-view section-title-link" canonical_section_guid=b59ab7ec-95bd-6108-f705-abc2e3469d56cpp canonical_section_id=29519678 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/9>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.9
+ Additional material: A first linked list
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember888 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember886 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember941 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=d624576b-3fed-48c9-aeef-a98dc3a6cf30>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=f48494eb-184d-476e-a5de-7c5a4563b9cb class="ember-view activity-label" aria-label="Participation activity 8.9.1: Inserting nodes into a basic linked list. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/9?content_resource_id=122084082">
+ 8.9.1: Inserting nodes into a basic linked list.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d1826091-545a-4b89-8121-9a971634093f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f48494eb-184d-476e-a5de-7c5a4563b9cb class="ember-view activity-label" aria-label="Participation activity 8.9.2: A first linked list. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/9?content_resource_id=122084084">
+ 8.9.2: A first linked list.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d1826091-545a-4b89-8121-9a971634093f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=c0d63dd5-7776-4e6a-a1e7-0fb1c2294a12>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=d22d173e-f032-4f54-bcf1-864033d6edc5 class="ember-view activity-label" aria-label="Challenge activity 8.9.1: Enter the output of the program using Linked List. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/9?content_resource_id=122084089">
+ 8.9.1: Enter the output of the program using Linked List.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=df9488b6-72d0-430e-99a1-db509f2dddd2>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item challenge">
+ <a id=d22d173e-f032-4f54-bcf1-864033d6edc5 class="ember-view activity-label" aria-label="Challenge activity 8.9.2: A first linked list. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/9?content_resource_id=122084090">
+ 8.9.2: A first linked list.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=df9488b6-72d0-430e-99a1-db509f2dddd2>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember889 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember889 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember889>
+ <a id=ember890 class="ember-view section-title-link" canonical_section_guid=a5db1b25-462f-72a0-4751-ecbed95bef61cpp canonical_section_id=29519679 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/10>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.10
+ Memory regions: Heap/Stack
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember891 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember889 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember942 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=e3b6600b-638a-42b9-aeeb-5650e4d35ac6>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=e631b2a7-31ec-4ea2-8b9b-0ef3110d4a3e class="ember-view activity-label" aria-label="Participation activity 8.10.1: Use of the four memory regions. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/10?content_resource_id=122084093">
+ 8.10.1: Use of the four memory regions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c9168090-62b2-4903-9ae0-3d859b0a51b2>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=e631b2a7-31ec-4ea2-8b9b-0ef3110d4a3e class="ember-view activity-label" aria-label="Participation activity 8.10.2: Stack and heap definitions. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/10?content_resource_id=122084094">
+ 8.10.2: Stack and heap definitions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c9168090-62b2-4903-9ae0-3d859b0a51b2>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember892 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember892 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember892>
+ <a id=ember893 class="ember-view section-title-link" canonical_section_guid=a187d6a7-1923-3ddf-c74b-b4a6891d51d8cpp canonical_section_id=29519688 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/11>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.11
+ Additional material: Destructors (Simple linked lists)
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember894 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember892 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember943 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=f2cdef22-6717-40fc-8190-b9baad75cc56>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=c97eda97-f55d-4f3b-9b36-5b9c2556d334 class="ember-view activity-label" aria-label="Participation activity 8.11.1: LinkedList nodes are not deallocated without a LinkedList class destructor. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/11?content_resource_id=122084193">
+ 8.11.1: LinkedList nodes are not deallocated without a LinkedList class destructor.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e1921b78-0350-4fd8-a82c-7c2573152680>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c97eda97-f55d-4f3b-9b36-5b9c2556d334 class="ember-view activity-label" aria-label="Participation activity 8.11.2: LinkedList class destructor. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/11?content_resource_id=122084194">
+ 8.11.2: LinkedList class destructor.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e1921b78-0350-4fd8-a82c-7c2573152680>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c97eda97-f55d-4f3b-9b36-5b9c2556d334 class="ember-view activity-label" aria-label="Participation activity 8.11.3: The LinkedList class destructor, called when the list is deleted, frees all nodes. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/11?content_resource_id=122084198">
+ 8.11.3: The LinkedList class destructor, called when the list is deleted, frees all nodes.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e1921b78-0350-4fd8-a82c-7c2573152680>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c97eda97-f55d-4f3b-9b36-5b9c2556d334 class="ember-view activity-label" aria-label="Participation activity 8.11.4: LinkedList class destructor. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/11?content_resource_id=122084199">
+ 8.11.4: LinkedList class destructor.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e1921b78-0350-4fd8-a82c-7c2573152680>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c97eda97-f55d-4f3b-9b36-5b9c2556d334 class="ember-view activity-label" aria-label="Participation activity 8.11.5: Destructors are called automatically only for non-reference/pointer variables. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/11?content_resource_id=122084202">
+ 8.11.5: Destructors are called automatically only for non-reference/pointer variables.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e1921b78-0350-4fd8-a82c-7c2573152680>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c97eda97-f55d-4f3b-9b36-5b9c2556d334 class="ember-view activity-label" aria-label="Participation activity 8.11.6: When a destructor is called. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/11?content_resource_id=122084203">
+ 8.11.6: When a destructor is called.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e1921b78-0350-4fd8-a82c-7c2573152680>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=ec77caad-418d-41e7-bcd8-db7b640f23cd>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=eadd768a-fc9f-4e6a-a549-5b92c2fe0378 class="ember-view activity-label" aria-label="Challenge activity 8.11.1: Enter the output of the destructors. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/11?content_resource_id=122084188">
+ 8.11.1: Enter the output of the destructors.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c097410d-744a-4133-b372-a23c4e041370>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item challenge">
+ <a id=eadd768a-fc9f-4e6a-a549-5b92c2fe0378 class="ember-view activity-label" aria-label="Challenge activity 8.11.2: Destructors (simple linked lists). 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/11?content_resource_id=122084190">
+ 8.11.2: Destructors (simple linked lists).
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c097410d-744a-4133-b372-a23c4e041370>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember895 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember895 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember895>
+ <a id=ember896 class="ember-view section-title-link" canonical_section_guid=c8a6e4da-8335-4d2c-a267-238834754514cpp canonical_section_id=29519680 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/12>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.12
+ Destructors
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember897 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember895 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember944 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=ec5fd196-3efe-4c09-bf11-c7cf7020d21d>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=d55beb9c-a5b5-4ff1-9f22-42f638b17487 class="ember-view activity-label" aria-label="Participation activity 8.12.1: Using the ActivityTracker class' destructor to deallocate an array. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/12?content_resource_id=122084097">
+ 8.12.1: Using the ActivityTracker class' destructor to deallocate an array.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ffdc0132-b9e9-45d1-8de1-97dfddda7bef>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d55beb9c-a5b5-4ff1-9f22-42f638b17487 class="ember-view activity-label" aria-label="Participation activity 8.12.2: Destroying an ActivityTracker object. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/12?content_resource_id=122084098">
+ 8.12.2: Destroying an ActivityTracker object.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ffdc0132-b9e9-45d1-8de1-97dfddda7bef>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d55beb9c-a5b5-4ff1-9f22-42f638b17487 class="ember-view activity-label" aria-label="Participation activity 8.12.3: Role of the Activity class' destructor when deleting an array of Activity objects. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/12?content_resource_id=122084101">
+ 8.12.3: Role of the Activity class' destructor when deleting an array of Activity objects.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ffdc0132-b9e9-45d1-8de1-97dfddda7bef>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d55beb9c-a5b5-4ff1-9f22-42f638b17487 class="ember-view activity-label" aria-label="Participation activity 8.12.4: Destroying an array of Activity objects. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/12?content_resource_id=122084102">
+ 8.12.4: Destroying an array of Activity objects.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ffdc0132-b9e9-45d1-8de1-97dfddda7bef>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d55beb9c-a5b5-4ff1-9f22-42f638b17487 class="ember-view activity-label" aria-label="Participation activity 8.12.5: When the ActivityTracker destructor is called. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/12?content_resource_id=122084106">
+ 8.12.5: When the ActivityTracker destructor is called.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ffdc0132-b9e9-45d1-8de1-97dfddda7bef>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d55beb9c-a5b5-4ff1-9f22-42f638b17487 class="ember-view activity-label" aria-label="Participation activity 8.12.6: When a destructor is called. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/12?content_resource_id=122084107">
+ 8.12.6: When a destructor is called.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ffdc0132-b9e9-45d1-8de1-97dfddda7bef>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=df5675fb-947f-4834-8e3b-aa0b76f355c8>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=fa610225-3bdc-439f-ae11-55b759459f8f class="ember-view activity-label" aria-label="Challenge activity 8.12.1: Destructors. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/12?content_resource_id=122084108">
+ 8.12.1: Destructors.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c1b18575-d7fd-4948-ad59-f27592554698>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember898 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember898 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember898>
+ <a id=ember899 class="ember-view section-title-link" canonical_section_guid=4d5b8464-c795-295c-c66e-0a2e786cd758cpp canonical_section_id=29519681 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/13>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.13
+ Memory leaks
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember900 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember898 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember945 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=d65c69d1-3f60-48d0-9e8d-93474e843001>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=d15505b0-4a5e-4793-82d3-4cc04c57afb8 class="ember-view activity-label" aria-label="Participation activity 8.13.1: Memory leak can use up all available memory. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/13?content_resource_id=122084111">
+ 8.13.1: Memory leak can use up all available memory.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f08b415f-368e-4041-8ef3-dcf5479a79e9>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d15505b0-4a5e-4793-82d3-4cc04c57afb8 class="ember-view activity-label" aria-label="Participation activity 8.13.2: Memory leaks. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/13?content_resource_id=122084113">
+ 8.13.2: Memory leaks.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f08b415f-368e-4041-8ef3-dcf5479a79e9>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d15505b0-4a5e-4793-82d3-4cc04c57afb8 class="ember-view activity-label" aria-label="Participation activity 8.13.3: Lack of destructor yields memory leak. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/13?content_resource_id=122084116">
+ 8.13.3: Lack of destructor yields memory leak.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f08b415f-368e-4041-8ef3-dcf5479a79e9>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d15505b0-4a5e-4793-82d3-4cc04c57afb8 class="ember-view activity-label" aria-label="Participation activity 8.13.4: Memory not freed in a destructor. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/13?content_resource_id=122084117">
+ 8.13.4: Memory not freed in a destructor.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f08b415f-368e-4041-8ef3-dcf5479a79e9>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d15505b0-4a5e-4793-82d3-4cc04c57afb8 class="ember-view activity-label" aria-label="Participation activity 8.13.5: Which results in a memory leak? 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/13?content_resource_id=122084118">
+ 8.13.5: Which results in a memory leak?
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f08b415f-368e-4041-8ef3-dcf5479a79e9>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember901 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember901 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember901>
+ <a id=ember902 class="ember-view section-title-link" canonical_section_guid=0472325d-114a-14e5-353a-b2e1f7d73122cpp canonical_section_id=29519682 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/14>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.14
+ Copy constructors
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember903 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember901 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember946 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=d8bdedad-54a9-4844-ad5d-bd5528cd03a0>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=f1c559d8-a0dc-4f48-a18d-2df95aafdc25 class="ember-view activity-label" aria-label="Participation activity 8.14.1: Copying an object without a copy constructor. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/14?content_resource_id=122084121">
+ 8.14.1: Copying an object without a copy constructor.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e02a196a-509c-4d12-b5c9-a4704374f17e>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f1c559d8-a0dc-4f48-a18d-2df95aafdc25 class="ember-view activity-label" aria-label="Participation activity 8.14.2: Copying an object without a copy constructor. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/14?content_resource_id=122084122">
+ 8.14.2: Copying an object without a copy constructor.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e02a196a-509c-4d12-b5c9-a4704374f17e>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f1c559d8-a0dc-4f48-a18d-2df95aafdc25 class="ember-view activity-label" aria-label="Participation activity 8.14.3: Determining which constructor will be called. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/14?content_resource_id=122084129">
+ 8.14.3: Determining which constructor will be called.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e02a196a-509c-4d12-b5c9-a4704374f17e>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=c9431f8c-d518-410f-a2ef-0fe71b9fb877>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=f3f2b9e4-3d65-448c-99f2-a6df945bedb3 class="ember-view activity-label" aria-label="Challenge activity 8.14.1: Enter the output of the copy constructors. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/14?content_resource_id=122084131">
+ 8.14.1: Enter the output of the copy constructors.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c6f209ee-6248-4880-9470-d389de3de2da>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item challenge">
+ <a id=f3f2b9e4-3d65-448c-99f2-a6df945bedb3 class="ember-view activity-label" aria-label="Challenge activity 8.14.2: Write a copy constructor. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/14?content_resource_id=122084132">
+ 8.14.2: Write a copy constructor.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c6f209ee-6248-4880-9470-d389de3de2da>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item challenge">
+ <a id=f3f2b9e4-3d65-448c-99f2-a6df945bedb3 class="ember-view activity-label" aria-label="Challenge activity 8.14.3: Copy constructors. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/14?content_resource_id=122084133">
+ 8.14.3: Copy constructors.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c6f209ee-6248-4880-9470-d389de3de2da>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember904 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember904 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember904>
+ <a id=ember905 class="ember-view section-title-link" canonical_section_guid=86427a98-1171-6245-a6b2-8e91934dab12cpp canonical_section_id=29519683 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/15>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.15
+ Copy assignment operator
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember906 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember904 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember947 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=e0028650-d4b6-43ed-9ad4-3ef75dfb85a7>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=ee7ca991-6fb8-4aed-80a4-033d27bf409c class="ember-view activity-label" aria-label="Participation activity 8.15.1: Basic assignment operation fails when pointer member involved. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/15?content_resource_id=122084137">
+ 8.15.1: Basic assignment operation fails when pointer member involved.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=daddbed6-032a-4056-80ce-b6b31108ecf7>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=ee7ca991-6fb8-4aed-80a4-033d27bf409c class="ember-view activity-label" aria-label="Participation activity 8.15.2: Default assignment operator behavior. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/15?content_resource_id=122084138">
+ 8.15.2: Default assignment operator behavior.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=daddbed6-032a-4056-80ce-b6b31108ecf7>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=ee7ca991-6fb8-4aed-80a4-033d27bf409c class="ember-view activity-label" aria-label="Participation activity 8.15.3: Assignment operator. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/15?content_resource_id=122084142">
+ 8.15.3: Assignment operator.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=daddbed6-032a-4056-80ce-b6b31108ecf7>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=dc7b72c5-01e8-4f38-ab54-3d60716344b1>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=f40a6224-2bbb-4c30-9c4a-468b43380d18 class="ember-view activity-label" aria-label="Challenge activity 8.15.1: Enter the output of the program with an overloaded assignment operator. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/15?content_resource_id=122084143">
+ 8.15.1: Enter the output of the program with an overloaded assignment operator.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=fba2f1ee-b86f-4bee-9dff-f51db15d0b1b>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item challenge">
+ <a id=f40a6224-2bbb-4c30-9c4a-468b43380d18 class="ember-view activity-label" aria-label="Challenge activity 8.15.2: Copy assignment operator. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/15?content_resource_id=122084134">
+ 8.15.2: Copy assignment operator.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=fba2f1ee-b86f-4bee-9dff-f51db15d0b1b>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember907 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember907 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember907>
+ <a id=ember908 class="ember-view section-title-link" canonical_section_guid=9be4f44b-785a-fcb4-f05e-645b37311d0ecpp canonical_section_id=29519684 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/16>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.16
+ Rule of Three
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember909 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember907 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember948 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=e4b4b3e8-6468-4aba-ad75-5994721f954e>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=d96662b4-6c85-4f26-a36e-4464ff617491 class="ember-view activity-label" aria-label="Participation activity 8.16.1: Defining the big three in a class that uses dynamically allocated data. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/16?content_resource_id=122084146">
+ 8.16.1: Defining the big three in a class that uses dynamically allocated data.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c408c56f-a790-456b-9b7e-7f7087a44b38>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d96662b4-6c85-4f26-a36e-4464ff617491 class="ember-view activity-label" aria-label="Participation activity 8.16.2: Recap on the three special member functions. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/16?content_resource_id=122084147">
+ 8.16.2: Recap on the three special member functions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c408c56f-a790-456b-9b7e-7f7087a44b38>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d96662b4-6c85-4f26-a36e-4464ff617491 class="ember-view activity-label" aria-label="Participation activity 8.16.3: Rule of three. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/16?content_resource_id=122084154">
+ 8.16.3: Rule of three.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c408c56f-a790-456b-9b7e-7f7087a44b38>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d96662b4-6c85-4f26-a36e-4464ff617491 class="ember-view activity-label" aria-label="Participation activity 8.16.4: The common error of not defining the copy assignment operator. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/16?content_resource_id=122084150">
+ 8.16.4: The common error of not defining the copy assignment operator.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c408c56f-a790-456b-9b7e-7f7087a44b38>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d96662b4-6c85-4f26-a36e-4464ff617491 class="ember-view activity-label" aria-label="Participation activity 8.16.5: Default destructor, copy constructor, and copy assignment operator. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/16?content_resource_id=122084151">
+ 8.16.5: Default destructor, copy constructor, and copy assignment operator.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c408c56f-a790-456b-9b7e-7f7087a44b38>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember910 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember910 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember910>
+ <a id=ember911 class="ember-view section-title-link" canonical_section_guid=741772c6-7dc2-4258-bf1c-6535c8ab43d8cpp canonical_section_id=29519685 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/17>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.17
+ Smart pointers
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember912 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember910 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember949 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=ec222c26-14e5-4c2b-9529-f64ae8d8e8d8>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=e7da8dd7-9fc3-4ecf-ae16-c0ae8c25132a class="ember-view activity-label" aria-label="Participation activity 8.17.1: unique_ptr of type Sleep. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/17?content_resource_id=122084158">
+ 8.17.1: unique_ptr of type Sleep.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d90b433e-5b89-4477-a556-b028bf5084db>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=e7da8dd7-9fc3-4ecf-ae16-c0ae8c25132a class="ember-view activity-label" aria-label="Participation activity 8.17.2: unique_ptr of type Sleep. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/17?content_resource_id=122084159">
+ 8.17.2: unique_ptr of type Sleep.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d90b433e-5b89-4477-a556-b028bf5084db>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=e7da8dd7-9fc3-4ecf-ae16-c0ae8c25132a class="ember-view activity-label" aria-label="Participation activity 8.17.3: Smart pointers. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/17?content_resource_id=122084164">
+ 8.17.3: Smart pointers.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d90b433e-5b89-4477-a556-b028bf5084db>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=cb9f3bd8-e64e-4ae9-99c2-d7f655d48a4d>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=d59c213c-308d-4e9d-89d8-c67c7f4332a7 class="ember-view activity-label" aria-label="Challenge activity 8.17.1: Smart pointers. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/17?content_resource_id=122084166">
+ 8.17.1: Smart pointers.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e9da8279-abeb-48d3-bfc2-12bf7405b525>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember913 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember913 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember913>
+ <a id=ember914 class="ember-view section-title-link" canonical_section_guid=d2aa692a-5eac-4c0f-a996-a515b99a7179cpp canonical_section_id=29519686 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/18>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.18
+ C++ example: Employee list using vectors
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label id=ember915 class="toc-item-action section-reporting-expand-button ember-view"> <div class=no-activities>
+ No points
+ </div>
+ </div>
+ </div>
+</div></li>
+ <li id=ember916 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember916 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember916>
+ <a id=ember917 class="ember-view section-title-link" canonical_section_guid=d37f5065-bb36-4f9b-94f7-81ffb4986616 canonical_section_id=28884977 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/19>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.19
+ LAB: Library book sorting
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember918 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember916 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember950 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=f178c1b1-b3dd-475a-ad4f-3c6fe0594f82>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=f3034cbc-5eb4-4ca7-bf0e-558d2d35393b class="ember-view activity-label" aria-label="Lab activity 19.8: LAB: Library book sorting Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/19?content_resource_id=122086884">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember919 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember919 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember919>
+ <a id=ember920 class="ember-view section-title-link" canonical_section_guid=6f237a6a-c53f-4ab3-a731-1db8a1d49a4a canonical_section_id=28884978 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/20>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.20
+ LAB: Mileage tracker for a runner
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember921 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember919 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember951 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=fc7fddb4-41de-427e-9949-97f2aea6d502>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=d616cd58-ef3e-4410-addf-a5b799e823c9 class="ember-view activity-label" aria-label="Lab activity 20.8: LAB: Mileage tracker for a runner Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/20?content_resource_id=122086885">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember922 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember922 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember922>
+ <a id=ember923 class="ember-view section-title-link" canonical_section_guid=047b1922-7fa6-4c02-8fad-01fffb08a516 canonical_section_id=28884979 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/21>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.21
+ LAB: Inventory (linked lists: insert at the front of a list)
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember924 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember922 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember952 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=c1e2100a-6898-4866-bf89-d55e8ef9eb01>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=e3bab362-b7bb-46c0-9564-be8197f7a2be class="ember-view activity-label" aria-label="Lab activity 21.8: LAB: Inventory (linked lists: insert at the front of a list) Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/21?content_resource_id=122086886">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember925 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember925 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember925>
+ <a id=ember926 class="ember-view section-title-link" canonical_section_guid=7fd8c04d-7ef1-483e-92bd-ade206098343 canonical_section_id=28884980 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/22>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 8.22
+ LAB: Playlist (output linked list)
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember927 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember925 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember953 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=d663abfe-da47-49a3-b62e-e323f02e2288>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=ce447a67-1058-4df2-95d0-a495bac6433c class="ember-view activity-label" aria-label="Lab activity 22.8: LAB: Playlist (output linked list) Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/22?content_resource_id=122086887">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember928 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember928 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember928>
+ <a id=ember929 class="ember-view section-title-link" canonical_section_guid=b5ba2d01-0d6b-4d99-8cc8-78895a04a7d9 canonical_section_id=28884981 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/23>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class="section-title ember-tooltip-target">
+ 8.23
+ LAB: Grocery shopping list (linked list: inserting at the end of a list)
+ <div id=ember932 class="ember-tooltip-base ember-view sf-hidden"> 
+</div>
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember930 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember928 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember954 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=cb6c8af9-892f-41ca-9667-497676c11ace>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=cb4d271a-66f7-4c3d-b4bb-f0e2181e7a1f class="ember-view activity-label" aria-label="Lab activity 23.8: LAB: Grocery shopping list (linked list: inserting at the end of a list) Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/section/23?content_resource_id=122086888">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ </ul>
+ </div>
+ <div class="toc-header-common chapter-actions">
+ <div class=chapter-item-content>
+ <a id=ember931 class="ember-view action" target=_blank href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/8/print>
+ <i aria-label=print class="zb-icon material-symbols-outlined med blue item-bullet" role=img aria-hidden=true>
+ print
+</i>
+ <span class=title>Print chapter</span>
+ </a>
+ </div>
+ </div>
+</div></li>
+ </ul></body></html>

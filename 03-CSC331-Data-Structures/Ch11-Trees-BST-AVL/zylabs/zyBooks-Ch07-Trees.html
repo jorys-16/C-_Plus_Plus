@@ -1,0 +1,2418 @@
+<!doctype html><html><head><meta charset="utf-8"><title>7. Trees</title><style>body{font-family:Segoe UI,Arial,sans-serif;max-width:1100px;margin:2rem auto;padding:0 1rem;line-height:1.45}a{color:#0969da}.source{color:#666;font-size:.9rem}</style></head><body><h1>7. Trees</h1><p class="source">Extracted from My activity - Data Structures in C＋＋ ｜ zyBooks.html. Activity links open zyBooks.</p><ul><li id=ember35 class="js-draggableObject draggable-object ember-view chapter-item expanded"><div class=toc-item>
+ <div class=toc-header-common>
+ <div class=chapter-item-content>
+ <div class="chapter-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox chapter-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=chapter-title-ember35 type=checkbox value=on>
+ </div>
+ <div class="chapter-info unused" id=chapter-title-ember35>
+ <span class=chapter-title>
+ 7.
+ Trees
+ </span>
+ </div>
+ </div>
+ <div class=chapter-action>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember444 class="toc-item-action chapter-details-expand flex-row ember-view"> <div class="columnar-scores chapter">
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding expand-icon" aria-expanded=true aria-labelledby=chapter-title-ember35 type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ </div>
+ </div>
+ <div id=ember744 class="sortable-objects ember-view section-list-container">
+ <ul class=section-list>
+ <li id=ember745 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember745 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember745>
+ <a id=ember746 class="ember-view section-title-link" canonical_section_guid=18e635ac-d831-73d6-f31d-ee92586a9ee5cpplangspec canonical_section_id=30363558 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/1>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 7.1
+ Binary trees
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember747 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember745 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember788 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=c8460bcf-8423-436c-a7d4-4e86dabb30a9>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=f89674f4-89a4-42b6-843f-52a700add317 class="ember-view activity-label" aria-label="Participation activity 7.1.1: Binary tree basics. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/1?content_resource_id=133188140">
+ 7.1.1: Binary tree basics.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e986bb18-45ac-4fa2-b35d-34f8063f101f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f89674f4-89a4-42b6-843f-52a700add317 class="ember-view activity-label" aria-label="Participation activity 7.1.2: Binary tree basics. 7 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/1?content_resource_id=133188150">
+ 7.1.2: Binary tree basics.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e986bb18-45ac-4fa2-b35d-34f8063f101f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f89674f4-89a4-42b6-843f-52a700add317 class="ember-view activity-label" aria-label="Participation activity 7.1.3: Binary tree terminology: height, depth, and level. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/1?content_resource_id=133188143">
+ 7.1.3: Binary tree terminology: height, depth, and level.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e986bb18-45ac-4fa2-b35d-34f8063f101f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f89674f4-89a4-42b6-843f-52a700add317 class="ember-view activity-label" aria-label="Participation activity 7.1.4: Binary tree height, depth, and level. 6 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/1?content_resource_id=133188144">
+ 7.1.4: Binary tree height, depth, and level.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e986bb18-45ac-4fa2-b35d-34f8063f101f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f89674f4-89a4-42b6-843f-52a700add317 class="ember-view activity-label" aria-label="Participation activity 7.1.5: Identifying special types of binary trees. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/1?content_resource_id=133188148">
+ 7.1.5: Identifying special types of binary trees.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e986bb18-45ac-4fa2-b35d-34f8063f101f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f89674f4-89a4-42b6-843f-52a700add317 class="ember-view activity-label" aria-label="Participation activity 7.1.6: Identifying binary tree subtrees. 5 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/1?content_resource_id=133188154">
+ 7.1.6: Identifying binary tree subtrees.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e986bb18-45ac-4fa2-b35d-34f8063f101f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=f63ea443-3471-452d-b5f1-603e1c5761d9>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=f51eab96-24c3-44af-9498-317c2e4c97f7 class="ember-view activity-label" aria-label="Challenge activity 7.1.1: Binary trees. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/1?content_resource_id=133188149">
+ 7.1.1: Binary trees.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ef2e22fe-ce4f-4832-8673-1194e4ac090c>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember748 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember748 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember748>
+ <a id=ember749 class="ember-view section-title-link" canonical_section_guid=03196fa7-65e5-4414-a6c3-4d5ef7040a17cpplangspec canonical_section_id=30363559 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/2>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 7.2
+ Applications of trees
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember750 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember748 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember789 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=e42b3ec4-21da-4e3d-b244-0740c55f46b8>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=c46b7b37-013f-40e0-9954-18ee8ee7874f class="ember-view activity-label" aria-label="Participation activity 7.2.1: A file system is a hierarchy that can be represented by a tree. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/2?content_resource_id=133188157">
+ 7.2.1: A file system is a hierarchy that can be represented by a tree.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e7898d0c-98c3-4c34-b831-558b281e5b35>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c46b7b37-013f-40e0-9954-18ee8ee7874f class="ember-view activity-label" aria-label="Participation activity 7.2.2: Analyzing a file system tree. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/2?content_resource_id=133188158">
+ 7.2.2: Analyzing a file system tree.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e7898d0c-98c3-4c34-b831-558b281e5b35>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c46b7b37-013f-40e0-9954-18ee8ee7874f class="ember-view activity-label" aria-label="Participation activity 7.2.3: File system trees. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/2?content_resource_id=133188159">
+ 7.2.3: File system trees.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e7898d0c-98c3-4c34-b831-558b281e5b35>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c46b7b37-013f-40e0-9954-18ee8ee7874f class="ember-view activity-label" aria-label="Participation activity 7.2.4: A BSP tree is used to quickly determine which objects do not need to be rendered. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/2?content_resource_id=133188162">
+ 7.2.4: A BSP tree is used to quickly determine which objects do not need to be rendered.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e7898d0c-98c3-4c34-b831-558b281e5b35>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c46b7b37-013f-40e0-9954-18ee8ee7874f class="ember-view activity-label" aria-label="Participation activity 7.2.5: Binary space partitioning. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/2?content_resource_id=133188163">
+ 7.2.5: Binary space partitioning.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e7898d0c-98c3-4c34-b831-558b281e5b35>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember751 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember751 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember751>
+ <a id=ember752 class="ember-view section-title-link" canonical_section_guid=dd3e7acb-0dc4-07c6-5c56-8504e5f576c2cpplangspec canonical_section_id=30363560 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/3>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 7.3
+ Binary search trees
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember753 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember751 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember790 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=ce47b6d2-468f-4d22-bc22-dca2fffe58aa>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=f9d1a582-e525-4664-a9ab-9f3f92cc02a3 class="ember-view activity-label" aria-label="Participation activity 7.3.1: BST ordering properties. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/3?content_resource_id=133188167">
+ 7.3.1: BST ordering properties.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=fa5710ca-d158-4635-a716-65f3f4cfb549>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f9d1a582-e525-4664-a9ab-9f3f92cc02a3 class="ember-view activity-label" aria-label="Participation activity 7.3.2: Binary search tree: Basic ordering property. 7 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/3?content_resource_id=133188168">
+ 7.3.2: Binary search tree: Basic ordering property.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=fa5710ca-d158-4635-a716-65f3f4cfb549>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f9d1a582-e525-4664-a9ab-9f3f92cc02a3 class="ember-view activity-label" aria-label="Participation activity 7.3.3: A BST may yield faster searches than a linked list. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/3?content_resource_id=133188178">
+ 7.3.3: A BST may yield faster searches than a linked list.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=fa5710ca-d158-4635-a716-65f3f4cfb549>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f9d1a582-e525-4664-a9ab-9f3f92cc02a3 class="ember-view activity-label" aria-label="Participation activity 7.3.4: Linked list vs. BST search. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/3?content_resource_id=133188179">
+ 7.3.4: Linked list vs. BST search.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=fa5710ca-d158-4635-a716-65f3f4cfb549>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f9d1a582-e525-4664-a9ab-9f3f92cc02a3 class="ember-view activity-label" aria-label="Participation activity 7.3.5: Binary search tree: Defined ordering. 6 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/3?content_resource_id=133188184">
+ 7.3.5: Binary search tree: Defined ordering.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=fa5710ca-d158-4635-a716-65f3f4cfb549>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f9d1a582-e525-4664-a9ab-9f3f92cc02a3 class="ember-view activity-label" aria-label="Participation activity 7.3.6: BSTNode and BinarySearchTree classes. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/3?content_resource_id=133188176">
+ 7.3.6: BSTNode and BinarySearchTree classes.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=fa5710ca-d158-4635-a716-65f3f4cfb549>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=d72d3b42-3e05-49da-b4c7-c5508d77b6b7>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=ca49da32-7e2e-44c3-bdab-d6a95005f3d1 class="ember-view activity-label" aria-label="Challenge activity 7.3.1: Binary search trees. 5 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/3?content_resource_id=133188169">
+ 7.3.1: Binary search trees.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c1466e48-1681-47b6-8d59-a0c27a690ac7>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember754 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember754 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember754>
+ <a id=ember755 class="ember-view section-title-link" canonical_section_guid=1c1f4c19-a9a6-6d21-11cf-b3628848a6e8cpplangspec canonical_section_id=30363561 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/4>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 7.4
+ BST: Search algorithm
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember756 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember754 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember791 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=fc04fa29-4462-46ca-843b-43797524f8e9>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=cb0a5e49-872d-4232-8e22-df117c86ffdf class="ember-view activity-label" aria-label="Participation activity 7.4.1: BST search algorithm. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/4?content_resource_id=133188187">
+ 7.4.1: BST search algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e408b699-391f-4956-958d-cdc178b75f13>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=cb0a5e49-872d-4232-8e22-df117c86ffdf class="ember-view activity-label" aria-label="Participation activity 7.4.2: BST search algorithm. 8 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/4?content_resource_id=133188188">
+ 7.4.2: BST search algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e408b699-391f-4956-958d-cdc178b75f13>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=cb0a5e49-872d-4232-8e22-df117c86ffdf class="ember-view activity-label" aria-label="Participation activity 7.4.3: Searching a perfect BST with N nodes requires only \(O(\log N)\) comparisons. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/4?content_resource_id=133188192">
+ 7.4.3: Searching a perfect BST with N nodes requires only <mjx-container sre-explorer-id=6 tabindex=0 role=tree class=CtxtMenu_Attached_0 ctxtmenu_oldtabindex=1 ctxtmenu_counter=6 style=position:relative><mjx-lazy data-mjx-lazy=3 aria-hidden=true></mjx-lazy><mjx-assistive-mml unselectable=on display=inline><math xmlns=http://www.w3.org/1998/Math/MathML data-semantic-type=empty data-semantic-role=unknown data-semantic- data-semantic-structure=0 data-semantic-speech></math></mjx-assistive-mml></mjx-container> comparisons.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e408b699-391f-4956-958d-cdc178b75f13>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=cb0a5e49-872d-4232-8e22-df117c86ffdf class="ember-view activity-label" aria-label="Participation activity 7.4.4: Searching BSTs with N nodes. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/4?content_resource_id=133188193">
+ 7.4.4: Searching BSTs with N nodes.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e408b699-391f-4956-958d-cdc178b75f13>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=efba35c1-b307-42f8-9a68-39c21a051253>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=cf0204bc-40e9-4f40-85fc-75aebe84c4cf class="ember-view activity-label" aria-label="Challenge activity 7.4.1: BST search algorithm. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/4?content_resource_id=133188194">
+ 7.4.1: BST search algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cddfdcb5-04f2-40df-9566-0be1685314fa>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember757 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember757 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember757>
+ <a id=ember758 class="ember-view section-title-link" canonical_section_guid=9a76e1ec-dcbb-a7b9-894c-15e15c4d7e8bcpplangspec canonical_section_id=30363562 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/5>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 7.5
+ BST: Insertion
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember759 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember757 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember792 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=f694288f-4c5c-480d-a5d6-d858ff8d3bec>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=f48c1d0b-941a-4162-90fc-b157f1dba2fd class="ember-view activity-label" aria-label="Participation activity 7.5.1: Binary search tree insertions. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/5?content_resource_id=133188196">
+ 7.5.1: Binary search tree insertions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f995a0fd-0d01-496e-816c-9cd6b7d2adda>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f48c1d0b-941a-4162-90fc-b157f1dba2fd class="ember-view activity-label" aria-label="Participation activity 7.5.2: BST insert algorithm. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/5?content_resource_id=133188197">
+ 7.5.2: BST insert algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f995a0fd-0d01-496e-816c-9cd6b7d2adda>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f48c1d0b-941a-4162-90fc-b157f1dba2fd class="ember-view activity-label" aria-label="Participation activity 7.5.3: BST insert algorithm decisions. 5 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/5?content_resource_id=133188198">
+ 7.5.3: BST insert algorithm decisions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f995a0fd-0d01-496e-816c-9cd6b7d2adda>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f48c1d0b-941a-4162-90fc-b157f1dba2fd class="ember-view activity-label" aria-label="Participation activity 7.5.4: Tracing BST insertions. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/5?content_resource_id=133188199">
+ 7.5.4: Tracing BST insertions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f995a0fd-0d01-496e-816c-9cd6b7d2adda>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f48c1d0b-941a-4162-90fc-b157f1dba2fd class="ember-view activity-label" aria-label="Participation activity 7.5.5: Insert-key operation and complexity. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/5?content_resource_id=133188203">
+ 7.5.5: Insert-key operation and complexity.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f995a0fd-0d01-496e-816c-9cd6b7d2adda>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=fe9b6946-bdcd-4450-9117-abf22dc9b598>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=c4223565-603a-4fc9-8eec-9d6000fa5924 class="ember-view activity-label" aria-label="Challenge activity 7.5.1: BST insert algorithm. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/5?content_resource_id=133188206">
+ 7.5.1: BST insert algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c75d8829-96fa-4ded-ac37-13b0c81509e5>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember760 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember760 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember760>
+ <a id=ember761 class="ember-view section-title-link" canonical_section_guid=5c2d33ac-cef2-7547-de54-3c129ae9f04ccpplangspec canonical_section_id=30363563 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/6>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 7.6
+ BST: Removal
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember762 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember760 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember793 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=fbb85c7b-883d-4e15-9467-60df38479900>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=c6a44b58-0363-4109-827a-23e74e000d94 class="ember-view activity-label" aria-label="Participation activity 7.6.1: BST remove: Removing a leaf, or an internal node with a single child. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/6?content_resource_id=133188214">
+ 7.6.1: BST remove: Removing a leaf, or an internal node with a single child.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f8a2941f-4032-49c7-b680-76c1871f6833>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c6a44b58-0363-4109-827a-23e74e000d94 class="ember-view activity-label" aria-label="Participation activity 7.6.2: BST remove: Removing internal node with two children. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/6?content_resource_id=133188215">
+ 7.6.2: BST remove: Removing internal node with two children.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f8a2941f-4032-49c7-b680-76c1871f6833>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c6a44b58-0363-4109-827a-23e74e000d94 class="ember-view activity-label" aria-label="Participation activity 7.6.3: BST remove algorithm. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/6?content_resource_id=133188216">
+ 7.6.3: BST remove algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f8a2941f-4032-49c7-b680-76c1871f6833>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=c6a44b58-0363-4109-827a-23e74e000d94 class="ember-view activity-label" aria-label="Participation activity 7.6.4: BST remove algorithm. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/6?content_resource_id=133188210">
+ 7.6.4: BST remove algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f8a2941f-4032-49c7-b680-76c1871f6833>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=dc6fc7ad-aef2-4a04-b0bb-962a33f5ddf4>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=d9ccaa89-3444-4d45-be1e-0cfd8b51ec59 class="ember-view activity-label" aria-label="Challenge activity 7.6.1: BST remove algorithm. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/6?content_resource_id=133188217">
+ 7.6.1: BST remove algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f4de6bd5-fbc6-40cc-845c-02c6257d84f6>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember763 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember763 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember763>
+ <a id=ember764 class="ember-view section-title-link" canonical_section_guid=14ae09e6-bac9-c4a9-4cbe-d4543424251acpplangspec canonical_section_id=30363564 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/7>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 7.7
+ BST: Traversal
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember765 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember763 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember794 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=e9585526-42e4-461c-907c-d838e3e5720e>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=eb2114af-0389-4cff-9a7c-3b27b9f2f096 class="ember-view activity-label" aria-label="Participation activity 7.7.1: BST inorder print algorithm. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/7?content_resource_id=133188219">
+ 7.7.1: BST inorder print algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ff93d736-a1a8-43f2-8b08-357a8e0807b4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=eb2114af-0389-4cff-9a7c-3b27b9f2f096 class="ember-view activity-label" aria-label="Participation activity 7.7.2: Inorder BST traversal. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/7?content_resource_id=133188221">
+ 7.7.2: Inorder BST traversal.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ff93d736-a1a8-43f2-8b08-357a8e0807b4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=eb2114af-0389-4cff-9a7c-3b27b9f2f096 class="ember-view activity-label" aria-label="Participation activity 7.7.3: Alternate implementation. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/7?content_resource_id=133188236">
+ 7.7.3: Alternate implementation.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ff93d736-a1a8-43f2-8b08-357a8e0807b4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=eb2114af-0389-4cff-9a7c-3b27b9f2f096 class="ember-view activity-label" aria-label="Participation activity 7.7.4: Generalized BSTInOrder() function. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/7?content_resource_id=133188237">
+ 7.7.4: Generalized BSTInOrder() function.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ff93d736-a1a8-43f2-8b08-357a8e0807b4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=eb2114af-0389-4cff-9a7c-3b27b9f2f096 class="ember-view activity-label" aria-label="Participation activity 7.7.5: BSTNodeVisitor alternate designs and extensions. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/7?content_resource_id=133188235">
+ 7.7.5: BSTNodeVisitor alternate designs and extensions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ff93d736-a1a8-43f2-8b08-357a8e0807b4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=eb2114af-0389-4cff-9a7c-3b27b9f2f096 class="ember-view activity-label" aria-label="Participation activity 7.7.6: Traversal implementations. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/7?content_resource_id=133188225">
+ 7.7.6: Traversal implementations.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ff93d736-a1a8-43f2-8b08-357a8e0807b4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=eb2114af-0389-4cff-9a7c-3b27b9f2f096 class="ember-view activity-label" aria-label="Participation activity 7.7.7: Traversal applications. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/7?content_resource_id=133188226">
+ 7.7.7: Traversal applications.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ff93d736-a1a8-43f2-8b08-357a8e0807b4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=c3465929-ce23-4300-8e0d-f4531858c937>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=de46fe75-9124-4d56-b3d0-87db3587f52d class="ember-view activity-label" aria-label="Challenge activity 7.7.1: BST: Traversal. 5 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/7?content_resource_id=133188238">
+ 7.7.1: BST: Traversal.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ff22f61e-0a7f-4c69-8bc7-806b19f73d71>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember766 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember766 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember766>
+ <a id=ember767 class="ember-view section-title-link" canonical_section_guid=70983860-a8c4-6fb4-42e2-1a9652acc761cpplangspec canonical_section_id=30363565 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/8>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 7.8
+ BST: Height and insertion order
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember768 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember766 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember795 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=dfd70d88-998f-488d-9aa7-b6496c5a8182>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=d836f52d-c582-4307-84b5-59ca043570b6 class="ember-view activity-label" aria-label="Participation activity 7.8.1: Inserting in random order keeps tree height near the minimum. Inserting in sorted order yields the maximum. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/8?content_resource_id=133188242">
+ 7.8.1: Inserting in random order keeps tree height near the minimum. Inserting in sorted order yields the maximum.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d75fb8ff-39f8-49e6-9e10-3d7979c011fd>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d836f52d-c582-4307-84b5-59ca043570b6 class="ember-view activity-label" aria-label="Participation activity 7.8.2: BST height. 6 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/8?content_resource_id=133188243">
+ 7.8.2: BST height.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d75fb8ff-39f8-49e6-9e10-3d7979c011fd>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d836f52d-c582-4307-84b5-59ca043570b6 class="ember-view activity-label" aria-label="Participation activity 7.8.3: BSTGetHeight() algorithm. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/8?content_resource_id=133188246">
+ 7.8.3: BSTGetHeight() algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d75fb8ff-39f8-49e6-9e10-3d7979c011fd>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d836f52d-c582-4307-84b5-59ca043570b6 class="ember-view activity-label" aria-label="Participation activity 7.8.4: BSTGetHeight() algorithm. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/8?content_resource_id=133188247">
+ 7.8.4: BSTGetHeight() algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d75fb8ff-39f8-49e6-9e10-3d7979c011fd>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=c0b9e820-9811-4b31-b255-21f10e068eef>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=d6dec85a-18d7-4d57-b98c-467c24ff5c3d class="ember-view activity-label" aria-label="Challenge activity 7.8.1: BST: Height and insertion order. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/8?content_resource_id=133934675">
+ 7.8.1: BST: Height and insertion order.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c74d51f8-3f68-46ae-bf10-2b2ce54c3c8a>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember769 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember769 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember769>
+ <a id=ember770 class="ember-view section-title-link" canonical_section_guid=557f02a6-3e2b-316a-9319-7d1ae4d61989cpplangspec canonical_section_id=30363566 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/9>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 7.9
+ BST: Recursion
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember771 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember769 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember796 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=dcc13b63-f868-4dac-bd1c-912ce7c6980a>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=f9d0becc-4445-48c5-a0d7-e7064a0699f9 class="ember-view activity-label" aria-label="Participation activity 7.9.1: BST recursive search algorithm. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/9?content_resource_id=133188250">
+ 7.9.1: BST recursive search algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d982e417-244f-424a-ade6-833a4971dfff>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f9d0becc-4445-48c5-a0d7-e7064a0699f9 class="ember-view activity-label" aria-label="Participation activity 7.9.2: BST recursive search algorithm. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/9?content_resource_id=133188253">
+ 7.9.2: BST recursive search algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d982e417-244f-424a-ade6-833a4971dfff>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f9d0becc-4445-48c5-a0d7-e7064a0699f9 class="ember-view activity-label" aria-label="Participation activity 7.9.3: BST get-parent algorithm. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/9?content_resource_id=133188256">
+ 7.9.3: BST get-parent algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d982e417-244f-424a-ade6-833a4971dfff>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f9d0becc-4445-48c5-a0d7-e7064a0699f9 class="ember-view activity-label" aria-label="Participation activity 7.9.4: Recursive BST insertion and removal. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/9?content_resource_id=133188259">
+ 7.9.4: Recursive BST insertion and removal.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d982e417-244f-424a-ade6-833a4971dfff>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember772 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember772 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember772>
+ <a id=ember773 class="ember-view section-title-link" canonical_section_guid=a804db4a-8bc6-f836-1b41-982126c7d55fcpplangspec canonical_section_id=30363567 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/10>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 7.10
+ BST: Parent node pointers
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember774 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember772 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember797 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=f8ea8284-d348-4bcc-8246-ab2322aa6c21>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=d575bde6-1e43-41df-b688-209b23727441 class="ember-view activity-label" aria-label="Participation activity 7.10.1: BSTNode class with parent pointer. 5 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/10?content_resource_id=133188265">
+ 7.10.1: BSTNode class with parent pointer.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d70b5959-4a34-409f-9190-7afaecb66849>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d575bde6-1e43-41df-b688-209b23727441 class="ember-view activity-label" aria-label="Participation activity 7.10.2: Insertion and removal. 8 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/10?content_resource_id=133188262">
+ 7.10.2: Insertion and removal.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d70b5959-4a34-409f-9190-7afaecb66849>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember775 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember775 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember775>
+ <a id=ember776 class="ember-view section-title-link" canonical_section_guid=9a48180c-6ea9-81c1-2197-375f379ca42fcpplangspec canonical_section_id=30363568 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/11>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 7.11
+ Set abstract data type (ADT)
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember777 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember775 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember798 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=f2992d52-ee42-4f48-9c2f-b2b057149706>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=f0619ae9-acc7-4fb2-bb57-c55388736244 class="ember-view activity-label" aria-label="Participation activity 7.11.1: Set abstract data type. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/11?content_resource_id=133188271">
+ 7.11.1: Set abstract data type.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d2392773-4a84-45cb-b913-68fdf793a1c4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f0619ae9-acc7-4fb2-bb57-c55388736244 class="ember-view activity-label" aria-label="Participation activity 7.11.2: Set abstract data type. 5 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/11?content_resource_id=133188272">
+ 7.11.2: Set abstract data type.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d2392773-4a84-45cb-b913-68fdf793a1c4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f0619ae9-acc7-4fb2-bb57-c55388736244 class="ember-view activity-label" aria-label="Participation activity 7.11.3: Subsets. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/11?content_resource_id=133188290">
+ 7.11.3: Subsets.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d2392773-4a84-45cb-b913-68fdf793a1c4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f0619ae9-acc7-4fb2-bb57-c55388736244 class="ember-view activity-label" aria-label="Participation activity 7.11.4: Subsets. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/11?content_resource_id=133188291">
+ 7.11.4: Subsets.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d2392773-4a84-45cb-b913-68fdf793a1c4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f0619ae9-acc7-4fb2-bb57-c55388736244 class="ember-view activity-label" aria-label="Participation activity 7.11.5: Set union, intersection, and difference. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/11?content_resource_id=133188292">
+ 7.11.5: Set union, intersection, and difference.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d2392773-4a84-45cb-b913-68fdf793a1c4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f0619ae9-acc7-4fb2-bb57-c55388736244 class="ember-view activity-label" aria-label="Participation activity 7.11.6: Union, intersection, and difference. 6 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/11?content_resource_id=133188279">
+ 7.11.6: Union, intersection, and difference.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d2392773-4a84-45cb-b913-68fdf793a1c4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f0619ae9-acc7-4fb2-bb57-c55388736244 class="ember-view activity-label" aria-label="Participation activity 7.11.7: Set filter and map. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/11?content_resource_id=133188286">
+ 7.11.7: Set filter and map.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d2392773-4a84-45cb-b913-68fdf793a1c4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f0619ae9-acc7-4fb2-bb57-c55388736244 class="ember-view activity-label" aria-label="Participation activity 7.11.8: Filtering a set of integers. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/11?content_resource_id=133188284">
+ 7.11.8: Filtering a set of integers.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d2392773-4a84-45cb-b913-68fdf793a1c4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f0619ae9-acc7-4fb2-bb57-c55388736244 class="ember-view activity-label" aria-label="Participation activity 7.11.9: Mapping a set of integers. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/11?content_resource_id=133188283">
+ 7.11.9: Mapping a set of integers.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d2392773-4a84-45cb-b913-68fdf793a1c4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f0619ae9-acc7-4fb2-bb57-c55388736244 class="ember-view activity-label" aria-label="Participation activity 7.11.10: Filter and map. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/11?content_resource_id=133188282">
+ 7.11.10: Filter and map.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d2392773-4a84-45cb-b913-68fdf793a1c4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f0619ae9-acc7-4fb2-bb57-c55388736244 class="ember-view activity-label" aria-label="Participation activity 7.11.11: Common set ADT operations. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/11?content_resource_id=133188285">
+ 7.11.11: Common set ADT operations.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d2392773-4a84-45cb-b913-68fdf793a1c4>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=e3e5be3b-6483-464a-85e7-62553aafc59e>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=dedfa86b-3af6-4536-9e94-f2cc88d1e772 class="ember-view activity-label" aria-label="Challenge activity 7.11.1: Set abstract data type. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/11?content_resource_id=133188273">
+ 7.11.1: Set abstract data type.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f0319cce-1d6c-49c4-af4b-8285318f4e37>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item challenge">
+ <a id=dedfa86b-3af6-4536-9e94-f2cc88d1e772 class="ember-view activity-label" aria-label="Challenge activity 7.11.2: Set operations. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/11?content_resource_id=133188287">
+ 7.11.2: Set operations.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f0319cce-1d6c-49c4-af4b-8285318f4e37>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember778 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember778 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember778>
+ <a id=ember779 class="ember-view section-title-link" canonical_section_guid=b6063148-0838-4527-93d8-58aa5232a9e8cpplangspec canonical_section_id=30363569 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/12>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 7.12
+ Implementing a set ADT with a BST
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember780 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember778 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember799 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=d51f7a52-3d37-4ae6-b305-a46815feaaa8>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=ea72b2f7-9df3-42f7-b032-4ce1b4f0737b class="ember-view activity-label" aria-label="Participation activity 7.12.1: BSTNode class. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/12?content_resource_id=133188296">
+ 7.12.1: BSTNode class.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cd31c73e-40f5-4689-8531-b7d924980355>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=ea72b2f7-9df3-42f7-b032-4ce1b4f0737b class="ember-view activity-label" aria-label="Participation activity 7.12.2: BSTIterator class. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/12?content_resource_id=133188300">
+ 7.12.2: BSTIterator class.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cd31c73e-40f5-4689-8531-b7d924980355>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=ea72b2f7-9df3-42f7-b032-4ce1b4f0737b class="ember-view activity-label" aria-label="Participation activity 7.12.3: Set class: BST functions. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/12?content_resource_id=133188304">
+ 7.12.3: Set class: BST functions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cd31c73e-40f5-4689-8531-b7d924980355>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=ea72b2f7-9df3-42f7-b032-4ce1b4f0737b class="ember-view activity-label" aria-label="Participation activity 7.12.4: Set class functions. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/12?content_resource_id=133188308">
+ 7.12.4: Set class functions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cd31c73e-40f5-4689-8531-b7d924980355>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember781 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember781 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember781>
+ <a id=ember782 class="ember-view section-title-link" canonical_section_guid=3ec7eba6-7933-f3bd-dc14-d84f67c355f6cpplangspec canonical_section_id=30363570 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/13>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 7.13
+ C++ unordered_set class
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember783 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember781 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember800 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=c7e055d0-7b74-4959-9797-2e34a09e5004>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=cc8d4cf1-b79d-48be-8ea0-075934c4befd class="ember-view activity-label" aria-label="Participation activity 7.13.1: C++ unordered_set class. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/13?content_resource_id=133188313">
+ 7.13.1: C++ unordered_set class.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f058ebcd-6fa5-46b5-8ce0-3b775c728e4a>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=cc8d4cf1-b79d-48be-8ea0-075934c4befd class="ember-view activity-label" aria-label="Participation activity 7.13.2: C++ unordered_set class. 5 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/13?content_resource_id=133188314">
+ 7.13.2: C++ unordered_set class.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f058ebcd-6fa5-46b5-8ce0-3b775c728e4a>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember784 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember784 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember784>
+ <a id=ember785 class="ember-view section-title-link" canonical_section_guid=82578cdf-8b3a-b58b-97ac-27e4396d7346cpplangspec canonical_section_id=30363571 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/14>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 7.14
+ Tries
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember786 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember784 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember801 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=c5d10623-ee80-4475-804f-708413588cc3>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=ea7abb2f-ba4d-44ab-884f-90a743cc0a12 class="ember-view activity-label" aria-label="Participation activity 7.14.1: Trie representing the set of strings: BAT, CAT, and CATS. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/14?content_resource_id=133188317">
+ 7.14.1: Trie representing the set of strings: BAT, CAT, and CATS.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=de6a003a-f264-4a2d-8d32-1142f7037a91>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=ea7abb2f-ba4d-44ab-884f-90a743cc0a12 class="ember-view activity-label" aria-label="Participation activity 7.14.2: Trie representing the set of strings: BAT, CAT, and CATS. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/14?content_resource_id=133188318">
+ 7.14.2: Trie representing the set of strings: BAT, CAT, and CATS.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=de6a003a-f264-4a2d-8d32-1142f7037a91>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=ea7abb2f-ba4d-44ab-884f-90a743cc0a12 class="ember-view activity-label" aria-label="Participation activity 7.14.3: Trie and TrieNode class. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/14?content_resource_id=133188339">
+ 7.14.3: Trie and TrieNode class.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=de6a003a-f264-4a2d-8d32-1142f7037a91>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=ea7abb2f-ba4d-44ab-884f-90a743cc0a12 class="ember-view activity-label" aria-label="Participation activity 7.14.4: Trie insert algorithm. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/14?content_resource_id=133188319">
+ 7.14.4: Trie insert algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=de6a003a-f264-4a2d-8d32-1142f7037a91>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=ea7abb2f-ba4d-44ab-884f-90a743cc0a12 class="ember-view activity-label" aria-label="Participation activity 7.14.5: Trie insert algorithm. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/14?content_resource_id=133188328">
+ 7.14.5: Trie insert algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=de6a003a-f264-4a2d-8d32-1142f7037a91>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=ea7abb2f-ba4d-44ab-884f-90a743cc0a12 class="ember-view activity-label" aria-label="Participation activity 7.14.6: Trie search algorithm. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/14?content_resource_id=133188320">
+ 7.14.6: Trie search algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=de6a003a-f264-4a2d-8d32-1142f7037a91>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=ea7abb2f-ba4d-44ab-884f-90a743cc0a12 class="ember-view activity-label" aria-label="Participation activity 7.14.7: Trie search algorithm. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/14?content_resource_id=133188331">
+ 7.14.7: Trie search algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=de6a003a-f264-4a2d-8d32-1142f7037a91>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=ea7abb2f-ba4d-44ab-884f-90a743cc0a12 class="ember-view activity-label" aria-label="Participation activity 7.14.8: Trie remove algorithm. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/14?content_resource_id=133188321">
+ 7.14.8: Trie remove algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=de6a003a-f264-4a2d-8d32-1142f7037a91>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=ea7abb2f-ba4d-44ab-884f-90a743cc0a12 class="ember-view activity-label" aria-label="Participation activity 7.14.9: Trie remove algorithm. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/14?content_resource_id=133188334">
+ 7.14.9: Trie remove algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=de6a003a-f264-4a2d-8d32-1142f7037a91>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=ca9c7598-fdad-4030-a3b6-1cf49452672d>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=ce26722a-5ced-48f6-9001-89f1eb6bc17e class="ember-view activity-label" aria-label="Challenge activity 7.14.1: Tries. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/section/14?content_resource_id=133188323">
+ 7.14.1: Tries.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=d60fa2fe-f1f1-48e4-b972-2008733ed81c>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ </ul>
+ </div>
+ <div class="toc-header-common chapter-actions">
+ <div class=chapter-item-content>
+ <a id=ember787 class="ember-view action" target=_blank href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/7/print>
+ <i aria-label=print class="zb-icon material-symbols-outlined med blue item-bullet" role=img aria-hidden=true>
+ print
+</i>
+ <span class=title>Print chapter</span>
+ </a>
+ </div>
+ </div>
+</div></li>
+ </ul></body></html>

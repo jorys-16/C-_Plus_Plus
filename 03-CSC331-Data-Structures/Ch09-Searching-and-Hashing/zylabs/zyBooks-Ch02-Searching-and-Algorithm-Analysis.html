@@ -1,0 +1,1211 @@
+<!doctype html><html><head><meta charset="utf-8"><title>2. Searching and Algorithm Analysis</title><style>body{font-family:Segoe UI,Arial,sans-serif;max-width:1100px;margin:2rem auto;padding:0 1rem;line-height:1.45}a{color:#0969da}.source{color:#666;font-size:.9rem}</style></head><body><h1>2. Searching and Algorithm Analysis</h1><p class="source">Extracted from My activity - Data Structures in C＋＋ ｜ zyBooks.html. Activity links open zyBooks.</p><ul><li id=ember25 class="js-draggableObject draggable-object ember-view chapter-item expanded"><div class=toc-item>
+ <div class=toc-header-common>
+ <div class=chapter-item-content>
+ <div class="chapter-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox chapter-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=chapter-title-ember25 type=checkbox value=on>
+ </div>
+ <div class="chapter-info unused" id=chapter-title-ember25>
+ <span class=chapter-title>
+ 2.
+ Searching and Algorithm Analysis
+ </span>
+ </div>
+ </div>
+ <div class=chapter-action>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember389 class="toc-item-action chapter-details-expand flex-row ember-view"> <div class="columnar-scores chapter">
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding expand-icon" aria-expanded=true aria-labelledby=chapter-title-ember25 type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ </div>
+ </div>
+ <div id=ember534 class="sortable-objects ember-view section-list-container">
+ <ul class=section-list>
+ <li id=ember535 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember535 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember535>
+ <a id=ember536 class="ember-view section-title-link" canonical_section_guid=4913a00a-5d86-d19c-3db4-cebb8d1f50b1cpplangspec canonical_section_id=30363264 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/1>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 2.1
+ Searching and algorithms
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember537 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember535 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember563 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=f5ac7b64-0c1d-42e0-9e37-8ec9e18dbaa6>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=d80e9230-163e-463f-9d4b-7e9e8068307f class="ember-view activity-label" aria-label="Participation activity 2.1.1: Linear search algorithm checks each element until key is found. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/1?content_resource_id=133187480">
+ 2.1.1: Linear search algorithm checks each element until key is found.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e2c530ef-9c91-4fbf-ad88-0e0450d277b1>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d80e9230-163e-463f-9d4b-7e9e8068307f class="ember-view activity-label" aria-label="Participation activity 2.1.2: Linear search algorithm execution. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/1?content_resource_id=133187478">
+ 2.1.2: Linear search algorithm execution.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e2c530ef-9c91-4fbf-ad88-0e0450d277b1>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember538 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember538 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember538>
+ <a id=ember539 class="ember-view section-title-link" canonical_section_guid=aacd188b-692e-c498-ae1f-6dbf5475361ccpplangspec canonical_section_id=30363265 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/2>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 2.2
+ Binary search
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember540 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember538 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember564 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=d37b434b-2cc3-4c19-99af-50cb407f1f7f>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=e6fd28c4-cc35-45f5-83da-1e3ca9d588d5 class="ember-view activity-label" aria-label="Participation activity 2.2.1: Using binary search to search contacts on your phone. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/2?content_resource_id=133187485">
+ 2.2.1: Using binary search to search contacts on your phone.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cc5084aa-9de4-40a4-a439-7bd9b77a0f33>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=e6fd28c4-cc35-45f5-83da-1e3ca9d588d5 class="ember-view activity-label" aria-label="Participation activity 2.2.2: Using binary search to search an array of contacts. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/2?content_resource_id=133187483">
+ 2.2.2: Using binary search to search an array of contacts.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cc5084aa-9de4-40a4-a439-7bd9b77a0f33>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=e6fd28c4-cc35-45f5-83da-1e3ca9d588d5 class="ember-view activity-label" aria-label="Participation activity 2.2.3: Binary search efficiently searches a sorted array. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/2?content_resource_id=133187495">
+ 2.2.3: Binary search efficiently searches a sorted array.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cc5084aa-9de4-40a4-a439-7bd9b77a0f33>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=e6fd28c4-cc35-45f5-83da-1e3ca9d588d5 class="ember-view activity-label" aria-label="Participation activity 2.2.4: Binary search algorithm execution. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/2?content_resource_id=133187488">
+ 2.2.4: Binary search algorithm execution.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cc5084aa-9de4-40a4-a439-7bd9b77a0f33>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=e6fd28c4-cc35-45f5-83da-1e3ca9d588d5 class="ember-view activity-label" aria-label="Participation activity 2.2.5: Speed of linear search versus binary search. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/2?content_resource_id=133187491">
+ 2.2.5: Speed of linear search versus binary search.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cc5084aa-9de4-40a4-a439-7bd9b77a0f33>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=e6fd28c4-cc35-45f5-83da-1e3ca9d588d5 class="ember-view activity-label" aria-label="Participation activity 2.2.6: Linear and binary search efficiency. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/2?content_resource_id=133187492">
+ 2.2.6: Linear and binary search efficiency.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cc5084aa-9de4-40a4-a439-7bd9b77a0f33>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=eab3f7d5-5357-41d2-b272-97f89aff7e9f>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=c2cba20d-384e-4080-bcd8-dc4e6f7574ab class="ember-view activity-label" aria-label="Challenge activity 2.2.1: Binary search. 5 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/2?content_resource_id=134735308">
+ 2.2.1: Binary search.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e9107dc8-572b-43bb-b937-d91e6cd14b83>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember541 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember541 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember541>
+ <a id=ember542 class="ember-view section-title-link" canonical_section_guid=ba930a54-d67d-2738-3fc5-bb7c7db3c427cpplangspec canonical_section_id=30363266 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/3>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 2.3
+ Constant time operations
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember543 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember541 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember565 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=d702057c-893e-4421-81ee-a7493ef99406>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=f33782e6-3a39-4c25-955c-ee5587aa8acf class="ember-view activity-label" aria-label="Participation activity 2.3.1: Constant time vs. non-constant time operations. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/3?content_resource_id=133187498">
+ 2.3.1: Constant time vs. non-constant time operations.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=df578a6a-0706-430e-8cea-9b57e5344d2d>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f33782e6-3a39-4c25-955c-ee5587aa8acf class="ember-view activity-label" aria-label="Participation activity 2.3.2: Constant time operations. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/3?content_resource_id=133187499">
+ 2.3.2: Constant time operations.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=df578a6a-0706-430e-8cea-9b57e5344d2d>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=f33782e6-3a39-4c25-955c-ee5587aa8acf class="ember-view activity-label" aria-label="Participation activity 2.3.3: Identifying constant time operations. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/3?content_resource_id=133187503">
+ 2.3.3: Identifying constant time operations.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=df578a6a-0706-430e-8cea-9b57e5344d2d>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember544 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember544 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember544>
+ <a id=ember545 class="ember-view section-title-link" canonical_section_guid=90356a36-4661-4508-9898-b68383fb5943cpplangspec canonical_section_id=30363267 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/4>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 2.4
+ Growth of functions and complexity
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember546 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember544 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember566 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=cef0ed90-7a15-4793-8f9d-5facd27f31e6>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=d8792cef-e433-4a49-9e3c-03a553c9c6f2 class="ember-view activity-label" aria-label="Participation activity 2.4.1: Upper and lower bounds with \(N_0\) = 1. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/4?content_resource_id=133187506">
+ 2.4.1: Upper and lower bounds with <mjx-container class="MathJax4 CtxtMenu_Attached_0" jax=SVG overflow=overflow aria-label="upper N 0" sre-explorer-id=3 tabindex=0 role=tree ctxtmenu_oldtabindex=1 ctxtmenu_counter=3 style=position:relative><svg xmlns=http://www.w3.org/2000/svg width=2.804ex height=1.92ex role=img focusable=false viewBox="0 -683 1239.6 848.6" xmlns:xlink=http://www.w3.org/1999/xlink aria-hidden=true style=vertical-align:-0.375ex><defs><path id=MJX-1-TEX-I-1D441 d="M46 1C79 1 113 2 151 2C190 2 228 2 259 0L272 0C278 6 278 5 282 19C287 39 286 40 278 46L268 46C233 46 201 51 196 79C196 85 199 100 261 344L326 604L453 305C555 62 580 4 582 2C585 0 586 0 599 0C614 0 618 1 620 7C620 7 767 591 769 597C783 625 816 635 858 637C875 637 878 638 880 642C882 644 888 667 888 672C888 680 884 682 873 682C843 682 814 680 767 680C717 680 686 683 653 683C640 683 642 679 637 660C634 647 634 647 636 644C638 638 641 637 659 637C686 635 723 631 723 606C723 594 714 556 670 381L616 168C613 180 401 676 401 677C398 683 404 683 299 683C225 683 204 683 202 682C198 680 197 677 193 662C190 647 190 647 192 644C194 637 195 637 234 637C263 636 287 635 289 634L221 362C165 137 153 90 150 85C137 61 109 48 62 46C44 46 41 45 39 40C38 39 31 14 31 10C31 2 35 1 46 1Z"></path><path id=MJX-1-TEX-N-30 d="M96 585C53 516 39 442 39 320C39 210 51 142 82 83C112 24 167-22 250-22C279-22 307-15 335-1C372 17 397 42 417 83C448 142 460 210 460 320C460 423 449 490 423 548C410 577 396 598 377 616C342 648 296 666 249 666C182 666 129 633 96 585ZM321 597C350 567 358 535 361 427C361 409 362 372 362 333C362 278 361 218 360 199C355 106 347 76 318 46C301 27 282 16 250 16C218 16 198 27 181 46C152 76 144 106 139 199C138 218 137 278 137 333C137 372 138 409 138 427C141 535 149 567 178 597C198 618 224 629 250 629C281 629 303 617 321 597Z"></path></defs><g stroke=currentColor fill=currentColor stroke-width=0 transform=scale(1,-1)><g data-mml-node=math data-latex=N_0 data-semantic-structure="(2 0 1)"><g data-mml-node=msub data-latex="N_0 " data-semantic-type=subscript data-semantic-role=latinletter data-semantic-id=2 data-semantic-children=0,1 data-semantic-owns="0 1" data-semantic-speech="upper N 0"><g data-mml-node=mi data-latex=N data-semantic-type=identifier data-semantic-role=latinletter data-semantic-font=italic data-semantic-annotation=clearspeak:simple data-semantic-id=0 data-semantic-parent=2><use data-c=1D441 xlink:href=#MJX-1-TEX-I-1D441></use></g><g data-mml-node=mn transform="translate(836,-150) scale(0.707)" data-latex=0 data-semantic-type=number data-semantic-role=integer data-semantic-font=normal data-semantic-annotation=clearspeak:simple data-semantic-id=1 data-semantic-parent=2><use data-c=30 xlink:href=#MJX-1-TEX-N-30></use></g></g></g></g></svg><mjx-assistive-mml unselectable=on display=inline aria-hidden=true><math xmlns=http://www.w3.org/1998/Math/MathML data-latex=N_0 data-semantic-structure="(2 0 1)"><msub data-latex="N_0 " data-semantic-type=subscript data-semantic-role=latinletter data-semantic- data-semantic-children=0,1 data-semantic-owns="0 1" data-semantic-speech="upper N 0"><mi data-latex=N data-semantic-type=identifier data-semantic-role=latinletter data-semantic-font=italic data-semantic-annotation=clearspeak:simple data-semantic- data-semantic-parent=2>N</mi><mn data-latex=0 data-semantic-type=number data-semantic-role=integer data-semantic-font=normal data-semantic-annotation=clearspeak:simple data-semantic- data-semantic-parent=2>0</mn></msub></math></mjx-assistive-mml></mjx-container> = 1.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e728f75f-2f1d-4e3e-8f93-24137b30e157>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d8792cef-e433-4a49-9e3c-03a553c9c6f2 class="ember-view activity-label" aria-label="Participation activity 2.4.2: Upper and lower bounds with \(N_0\) = 1. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/4?content_resource_id=133187507">
+ 2.4.2: Upper and lower bounds with <mjx-container class="MathJax4 CtxtMenu_Attached_0" jax=SVG overflow=overflow aria-label="upper N 0" sre-explorer-id=4 tabindex=0 role=tree ctxtmenu_oldtabindex=1 ctxtmenu_counter=4 style=position:relative><svg xmlns=http://www.w3.org/2000/svg width=2.804ex height=1.92ex role=img focusable=false viewBox="0 -683 1239.6 848.6" xmlns:xlink=http://www.w3.org/1999/xlink aria-hidden=true style=vertical-align:-0.375ex><defs><path id=MJX-2-TEX-I-1D441 d="M46 1C79 1 113 2 151 2C190 2 228 2 259 0L272 0C278 6 278 5 282 19C287 39 286 40 278 46L268 46C233 46 201 51 196 79C196 85 199 100 261 344L326 604L453 305C555 62 580 4 582 2C585 0 586 0 599 0C614 0 618 1 620 7C620 7 767 591 769 597C783 625 816 635 858 637C875 637 878 638 880 642C882 644 888 667 888 672C888 680 884 682 873 682C843 682 814 680 767 680C717 680 686 683 653 683C640 683 642 679 637 660C634 647 634 647 636 644C638 638 641 637 659 637C686 635 723 631 723 606C723 594 714 556 670 381L616 168C613 180 401 676 401 677C398 683 404 683 299 683C225 683 204 683 202 682C198 680 197 677 193 662C190 647 190 647 192 644C194 637 195 637 234 637C263 636 287 635 289 634L221 362C165 137 153 90 150 85C137 61 109 48 62 46C44 46 41 45 39 40C38 39 31 14 31 10C31 2 35 1 46 1Z"></path><path id=MJX-2-TEX-N-30 d="M96 585C53 516 39 442 39 320C39 210 51 142 82 83C112 24 167-22 250-22C279-22 307-15 335-1C372 17 397 42 417 83C448 142 460 210 460 320C460 423 449 490 423 548C410 577 396 598 377 616C342 648 296 666 249 666C182 666 129 633 96 585ZM321 597C350 567 358 535 361 427C361 409 362 372 362 333C362 278 361 218 360 199C355 106 347 76 318 46C301 27 282 16 250 16C218 16 198 27 181 46C152 76 144 106 139 199C138 218 137 278 137 333C137 372 138 409 138 427C141 535 149 567 178 597C198 618 224 629 250 629C281 629 303 617 321 597Z"></path></defs><g stroke=currentColor fill=currentColor stroke-width=0 transform=scale(1,-1)><g data-mml-node=math data-latex=N_0 data-semantic-structure="(2 0 1)"><g data-mml-node=msub data-latex="N_0 " data-semantic-type=subscript data-semantic-role=latinletter data-semantic-id=2 data-semantic-children=0,1 data-semantic-owns="0 1" data-semantic-speech="upper N 0"><g data-mml-node=mi data-latex=N data-semantic-type=identifier data-semantic-role=latinletter data-semantic-font=italic data-semantic-annotation=clearspeak:simple data-semantic-id=0 data-semantic-parent=2><use data-c=1D441 xlink:href=#MJX-2-TEX-I-1D441></use></g><g data-mml-node=mn transform="translate(836,-150) scale(0.707)" data-latex=0 data-semantic-type=number data-semantic-role=integer data-semantic-font=normal data-semantic-annotation=clearspeak:simple data-semantic-id=1 data-semantic-parent=2><use data-c=30 xlink:href=#MJX-2-TEX-N-30></use></g></g></g></g></svg><mjx-assistive-mml unselectable=on display=inline aria-hidden=true><math xmlns=http://www.w3.org/1998/Math/MathML data-latex=N_0 data-semantic-structure="(2 0 1)"><msub data-latex="N_0 " data-semantic-type=subscript data-semantic-role=latinletter data-semantic- data-semantic-children=0,1 data-semantic-owns="0 1" data-semantic-speech="upper N 0"><mi data-latex=N data-semantic-type=identifier data-semantic-role=latinletter data-semantic-font=italic data-semantic-annotation=clearspeak:simple data-semantic- data-semantic-parent=2>N</mi><mn data-latex=0 data-semantic-type=number data-semantic-role=integer data-semantic-font=normal data-semantic-annotation=clearspeak:simple data-semantic- data-semantic-parent=2>0</mn></msub></math></mjx-assistive-mml></mjx-container> = 1.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e728f75f-2f1d-4e3e-8f93-24137b30e157>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d8792cef-e433-4a49-9e3c-03a553c9c6f2 class="ember-view activity-label" aria-label="Participation activity 2.4.3: Asymptotic notations. 5 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/4?content_resource_id=133187511">
+ 2.4.3: Asymptotic notations.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e728f75f-2f1d-4e3e-8f93-24137b30e157>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d8792cef-e433-4a49-9e3c-03a553c9c6f2 class="ember-view activity-label" aria-label="Participation activity 2.4.4: Exploring \(N_0\) with logarithms. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/4?content_resource_id=133187512">
+ 2.4.4: Exploring <mjx-container class="MathJax4 CtxtMenu_Attached_0" jax=SVG overflow=overflow aria-label="upper N 0" sre-explorer-id=5 tabindex=0 role=tree ctxtmenu_oldtabindex=1 ctxtmenu_counter=5 style=position:relative><svg xmlns=http://www.w3.org/2000/svg width=2.804ex height=1.92ex role=img focusable=false viewBox="0 -683 1239.6 848.6" xmlns:xlink=http://www.w3.org/1999/xlink aria-hidden=true style=vertical-align:-0.375ex><defs><path id=MJX-3-TEX-I-1D441 d="M46 1C79 1 113 2 151 2C190 2 228 2 259 0L272 0C278 6 278 5 282 19C287 39 286 40 278 46L268 46C233 46 201 51 196 79C196 85 199 100 261 344L326 604L453 305C555 62 580 4 582 2C585 0 586 0 599 0C614 0 618 1 620 7C620 7 767 591 769 597C783 625 816 635 858 637C875 637 878 638 880 642C882 644 888 667 888 672C888 680 884 682 873 682C843 682 814 680 767 680C717 680 686 683 653 683C640 683 642 679 637 660C634 647 634 647 636 644C638 638 641 637 659 637C686 635 723 631 723 606C723 594 714 556 670 381L616 168C613 180 401 676 401 677C398 683 404 683 299 683C225 683 204 683 202 682C198 680 197 677 193 662C190 647 190 647 192 644C194 637 195 637 234 637C263 636 287 635 289 634L221 362C165 137 153 90 150 85C137 61 109 48 62 46C44 46 41 45 39 40C38 39 31 14 31 10C31 2 35 1 46 1Z"></path><path id=MJX-3-TEX-N-30 d="M96 585C53 516 39 442 39 320C39 210 51 142 82 83C112 24 167-22 250-22C279-22 307-15 335-1C372 17 397 42 417 83C448 142 460 210 460 320C460 423 449 490 423 548C410 577 396 598 377 616C342 648 296 666 249 666C182 666 129 633 96 585ZM321 597C350 567 358 535 361 427C361 409 362 372 362 333C362 278 361 218 360 199C355 106 347 76 318 46C301 27 282 16 250 16C218 16 198 27 181 46C152 76 144 106 139 199C138 218 137 278 137 333C137 372 138 409 138 427C141 535 149 567 178 597C198 618 224 629 250 629C281 629 303 617 321 597Z"></path></defs><g stroke=currentColor fill=currentColor stroke-width=0 transform=scale(1,-1)><g data-mml-node=math data-latex=N_0 data-semantic-structure="(2 0 1)"><g data-mml-node=msub data-latex="N_0 " data-semantic-type=subscript data-semantic-role=latinletter data-semantic-id=2 data-semantic-children=0,1 data-semantic-owns="0 1" data-semantic-speech="upper N 0"><g data-mml-node=mi data-latex=N data-semantic-type=identifier data-semantic-role=latinletter data-semantic-font=italic data-semantic-annotation=clearspeak:simple data-semantic-id=0 data-semantic-parent=2><use data-c=1D441 xlink:href=#MJX-3-TEX-I-1D441></use></g><g data-mml-node=mn transform="translate(836,-150) scale(0.707)" data-latex=0 data-semantic-type=number data-semantic-role=integer data-semantic-font=normal data-semantic-annotation=clearspeak:simple data-semantic-id=1 data-semantic-parent=2><use data-c=30 xlink:href=#MJX-3-TEX-N-30></use></g></g></g></g></svg><mjx-assistive-mml unselectable=on display=inline aria-hidden=true><math xmlns=http://www.w3.org/1998/Math/MathML data-latex=N_0 data-semantic-structure="(2 0 1)"><msub data-latex="N_0 " data-semantic-type=subscript data-semantic-role=latinletter data-semantic- data-semantic-children=0,1 data-semantic-owns="0 1" data-semantic-speech="upper N 0"><mi data-latex=N data-semantic-type=identifier data-semantic-role=latinletter data-semantic-font=italic data-semantic-annotation=clearspeak:simple data-semantic- data-semantic-parent=2>N</mi><mn data-latex=0 data-semantic-type=number data-semantic-role=integer data-semantic-font=normal data-semantic-annotation=clearspeak:simple data-semantic- data-semantic-parent=2>0</mn></msub></math></mjx-assistive-mml></mjx-container> with logarithms.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e728f75f-2f1d-4e3e-8f93-24137b30e157>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember547 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember547 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember547>
+ <a id=ember548 class="ember-view section-title-link" canonical_section_guid=3a2f4d4b-17bd-6d6a-9245-2a9391cab4e1cpplangspec canonical_section_id=30363268 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/5>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 2.5
+ O notation
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember549 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember547 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember567 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=e4a8f2b6-81e1-4abe-9599-be2d0af6eac5>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=fa6705b8-5b34-4e44-b834-6110d67793b6 class="ember-view activity-label" aria-label="Participation activity 2.5.1: Determining Big O notation of a function. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/5?content_resource_id=133187515">
+ 2.5.1: Determining Big O notation of a function.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c6cf9ab1-9cd1-4a4f-934d-bac86d26821f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fa6705b8-5b34-4e44-b834-6110d67793b6 class="ember-view activity-label" aria-label="Participation activity 2.5.2: Big O notation. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/5?content_resource_id=133187516">
+ 2.5.2: Big O notation.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c6cf9ab1-9cd1-4a4f-934d-bac86d26821f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fa6705b8-5b34-4e44-b834-6110d67793b6 class="ember-view activity-label" aria-label="Participation activity 2.5.3: Big O notation for composite functions. 5 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/5?content_resource_id=133187520">
+ 2.5.3: Big O notation for composite functions.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c6cf9ab1-9cd1-4a4f-934d-bac86d26821f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fa6705b8-5b34-4e44-b834-6110d67793b6 class="ember-view activity-label" aria-label="Participation activity 2.5.4: Computational complexity graphing tool. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/5?content_resource_id=133187525">
+ 2.5.4: Computational complexity graphing tool.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c6cf9ab1-9cd1-4a4f-934d-bac86d26821f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fa6705b8-5b34-4e44-b834-6110d67793b6 class="ember-view activity-label" aria-label="Participation activity 2.5.5: Big O notation and growth rates. 5 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/5?content_resource_id=133187529">
+ 2.5.5: Big O notation and growth rates.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c6cf9ab1-9cd1-4a4f-934d-bac86d26821f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember550 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember550 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember550>
+ <a id=ember551 class="ember-view section-title-link" canonical_section_guid=a174f7f8-dcba-60da-4168-0da3aeac3c68cpplangspec canonical_section_id=30363269 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/6>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 2.6
+ Algorithm analysis
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember552 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember550 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember568 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=d0c810f1-d2dd-411f-82a7-932f842867cc>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=fa730e52-adf2-4b74-ba2b-fe966c3865da class="ember-view activity-label" aria-label="Participation activity 2.6.1: Runtime analysis: Finding the max value. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/6?content_resource_id=133187532">
+ 2.6.1: Runtime analysis: Finding the max value.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=dc96694b-208a-4adb-93fc-7c74333503d6>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fa730e52-adf2-4b74-ba2b-fe966c3865da class="ember-view activity-label" aria-label="Participation activity 2.6.2: Worst-case runtime analysis. 5 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/6?content_resource_id=133187533">
+ 2.6.2: Worst-case runtime analysis.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=dc96694b-208a-4adb-93fc-7c74333503d6>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fa730e52-adf2-4b74-ba2b-fe966c3865da class="ember-view activity-label" aria-label="Participation activity 2.6.3: Simplified runtime analysis: A constant number of constant time operations is O(1). 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/6?content_resource_id=133187541">
+ 2.6.3: Simplified runtime analysis: A constant number of constant time operations is O(1).
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=dc96694b-208a-4adb-93fc-7c74333503d6>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fa730e52-adf2-4b74-ba2b-fe966c3865da class="ember-view activity-label" aria-label="Participation activity 2.6.4: Constant time operations. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/6?content_resource_id=133187536">
+ 2.6.4: Constant time operations.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=dc96694b-208a-4adb-93fc-7c74333503d6>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fa730e52-adf2-4b74-ba2b-fe966c3865da class="ember-view activity-label" aria-label="Participation activity 2.6.5: Runtime analysis of nested loop: Selection sort algorithm. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/6?content_resource_id=133187542">
+ 2.6.5: Runtime analysis of nested loop: Selection sort algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=dc96694b-208a-4adb-93fc-7c74333503d6>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fa730e52-adf2-4b74-ba2b-fe966c3865da class="ember-view activity-label" aria-label="Participation activity 2.6.6: Nested loops. 5 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/6?content_resource_id=133187540">
+ 2.6.6: Nested loops.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=dc96694b-208a-4adb-93fc-7c74333503d6>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember553 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember553 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember553>
+ <a id=ember554 class="ember-view section-title-link" canonical_section_guid=4fd779b0-9e17-447c-9602-10048fa5e423cpplangspec canonical_section_id=30363270 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/7>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 2.7
+ Recursive definitions
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember555 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember553 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember569 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=f22d562a-5843-4da6-b62b-ea0a75e3c73e>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=e293052c-f882-4ebc-8f75-3acde34d619f class="ember-view activity-label" aria-label="Participation activity 2.7.1: Recursive factorial algorithm for positive numbers. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/7?content_resource_id=133187545">
+ 2.7.1: Recursive factorial algorithm for positive numbers.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e8d93d5a-281c-4afe-81e9-4c812efc18ab>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=e293052c-f882-4ebc-8f75-3acde34d619f class="ember-view activity-label" aria-label="Participation activity 2.7.2: Recursive algorithms. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/7?content_resource_id=133187546">
+ 2.7.2: Recursive algorithms.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e8d93d5a-281c-4afe-81e9-4c812efc18ab>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=e293052c-f882-4ebc-8f75-3acde34d619f class="ember-view activity-label" aria-label="Participation activity 2.7.3: CumulativeSum() recursive function. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/7?content_resource_id=133187550">
+ 2.7.3: CumulativeSum() recursive function.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e8d93d5a-281c-4afe-81e9-4c812efc18ab>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember556 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember556 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember556>
+ <a id=ember557 class="ember-view section-title-link" canonical_section_guid=d1aea443-a675-4dd0-9e47-63c4ba8f38e7cpplangspec canonical_section_id=30363271 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/8>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 2.8
+ Recursive algorithms
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember558 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember556 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember570 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=e9317160-14cd-48dc-a9a6-ddb123d7266a>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=e1a90db0-e030-41a3-8d42-4dd1fc831b2d class="ember-view activity-label" aria-label="Participation activity 2.8.1: FibonacciNumber recursive function. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/8?content_resource_id=133187554">
+ 2.8.1: FibonacciNumber recursive function.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f1ed46aa-49b2-4f97-8bce-5982634b0149>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=e1a90db0-e030-41a3-8d42-4dd1fc831b2d class="ember-view activity-label" aria-label="Participation activity 2.8.2: Recursive binary search. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/8?content_resource_id=133187557">
+ 2.8.2: Recursive binary search.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f1ed46aa-49b2-4f97-8bce-5982634b0149>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=e1a90db0-e030-41a3-8d42-4dd1fc831b2d class="ember-view activity-label" aria-label="Participation activity 2.8.3: Recursive binary search base case. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/8?content_resource_id=133187558">
+ 2.8.3: Recursive binary search base case.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f1ed46aa-49b2-4f97-8bce-5982634b0149>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember559 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember559 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember559>
+ <a id=ember560 class="ember-view section-title-link" canonical_section_guid=8fa4e046-57e8-4068-a371-8f238b3da5a4cpplangspec canonical_section_id=30363272 href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/9>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 2.9
+ Analyzing the time complexity of recursive algorithms
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember561 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember559 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember571 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=e37647dd-9f5f-4bb3-8c57-154090f584bf>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=d0d8a618-4b19-4b4d-8f09-1febc51218e4 class="ember-view activity-label" aria-label="Participation activity 2.9.1: Worst case binary search runtime complexity. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/9?content_resource_id=133187562">
+ 2.9.1: Worst case binary search runtime complexity.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cbb7f5e8-ed4a-4861-a49b-bfb5798aa64e>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d0d8a618-4b19-4b4d-8f09-1febc51218e4 class="ember-view activity-label" aria-label="Participation activity 2.9.2: Binary search and recurrence relations. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/9?content_resource_id=133187563">
+ 2.9.2: Binary search and recurrence relations.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cbb7f5e8-ed4a-4861-a49b-bfb5798aa64e>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d0d8a618-4b19-4b4d-8f09-1febc51218e4 class="ember-view activity-label" aria-label="Participation activity 2.9.3: Recursion trees. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/9?content_resource_id=133187566">
+ 2.9.3: Recursion trees.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cbb7f5e8-ed4a-4861-a49b-bfb5798aa64e>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d0d8a618-4b19-4b4d-8f09-1febc51218e4 class="ember-view activity-label" aria-label="Participation activity 2.9.4: Matching recursion trees with runtime complexities. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/9?content_resource_id=133187567">
+ 2.9.4: Matching recursion trees with runtime complexities.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cbb7f5e8-ed4a-4861-a49b-bfb5798aa64e>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d0d8a618-4b19-4b4d-8f09-1febc51218e4 class="ember-view activity-label" aria-label="Participation activity 2.9.5: Recursion trees. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/9?content_resource_id=133187568">
+ 2.9.5: Recursion trees.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cbb7f5e8-ed4a-4861-a49b-bfb5798aa64e>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d0d8a618-4b19-4b4d-8f09-1febc51218e4 class="ember-view activity-label" aria-label="Participation activity 2.9.6: Recursion trees. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/section/9?content_resource_id=133187569">
+ 2.9.6: Recursion trees.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cbb7f5e8-ed4a-4861-a49b-bfb5798aa64e>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ </ul>
+ </div>
+ <div class="toc-header-common chapter-actions">
+ <div class=chapter-item-content>
+ <a id=ember562 class="ember-view action" target=_blank href=https://learn.zybooks.com/zybook/DataStructuresCppR3/chapter/2/print>
+ <i aria-label=print class="zb-icon material-symbols-outlined med blue item-bullet" role=img aria-hidden=true>
+ print
+</i>
+ <span class=title>Print chapter</span>
+ </a>
+ </div>
+ </div>
+</div></li>
+ </ul></body></html>

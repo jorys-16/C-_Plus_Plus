@@ -1,0 +1,1493 @@
+<!doctype html><html><head><meta charset="utf-8"><title>18. Recursion</title><style>body{font-family:Segoe UI,Arial,sans-serif;max-width:1100px;margin:2rem auto;padding:0 1rem;line-height:1.45}a{color:#0969da}.source{color:#666;font-size:.9rem}</style></head><body><h1>18. Recursion</h1><p class="source">Extracted from CSC 211： Advanced Programming Techniques ｜ zyBooks.html. Activity links open zyBooks.</p><ul><li id=ember60 class="js-draggableObject draggable-object ember-view chapter-item expanded"><div class=toc-item>
+ <div class=toc-header-common>
+ <div class=chapter-item-content>
+ <div class="chapter-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox chapter-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=chapter-title-ember60 type=checkbox value=on>
+ </div>
+ <div class="chapter-info unused" id=chapter-title-ember60>
+ <span class=chapter-title>
+ 18.
+ Recursion
+ </span>
+ </div>
+ </div>
+ <div class=chapter-action>
+ <div aria-label="Labs 0% complete challenges 0% complete participations 0% complete " id=ember61 class="toc-item-action chapter-details-expand flex-row ember-view"> <div class="columnar-scores chapter">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLabs completion rate:" class="zb-chevron lab filled small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding expand-icon" aria-expanded=true aria-labelledby=chapter-title-ember60 type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ </div>
+ </div>
+ <div id=ember1709 class="sortable-objects ember-view section-list-container">
+ <ul class=section-list>
+ <li id=ember1710 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1710 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1710>
+ <a id=ember1711 class="ember-view section-title-link" canonical_section_guid=5939f7e4-2ed4-7e3a-765c-cf3b82308ef6c canonical_section_id=29520004 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/1>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 18.1
+ Recursion: Introduction
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember1712 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1710 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1756 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=d5acf110-ee1d-4e28-9a49-48bb9de06300>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=da3456d8-5c86-455a-be63-a7bb9b787297 class="ember-view activity-label" aria-label="Participation activity 18.1.1: Recursion. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/1?content_resource_id=122089316">
+ 18.1.1: Recursion.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c3db0b7e-81d6-4bca-8e1d-33b4866af3f0>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1713 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1713 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1713>
+ <a id=ember1714 class="ember-view section-title-link" canonical_section_guid=920989d1-bb65-fb77-2257-84d3c8df7300c canonical_section_id=29520005 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/2>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 18.2
+ Recursive functions
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember1715 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1713 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1757 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=e7e3b21e-6efd-44ef-a21d-739c32add33c>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=cb250818-462c-49d1-856c-aecde65f0fba class="ember-view activity-label" aria-label="Participation activity 18.2.1: A recursive function example. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/2?content_resource_id=122089317">
+ 18.2.1: A recursive function example.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ca4d18f9-1220-44c1-85f7-4253eea44e63>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=cb250818-462c-49d1-856c-aecde65f0fba class="ember-view activity-label" aria-label="Participation activity 18.2.2: Thinking about recursion. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/2?content_resource_id=122089319">
+ 18.2.2: Thinking about recursion.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=ca4d18f9-1220-44c1-85f7-4253eea44e63>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=d267a21b-6dc7-4ade-be03-9f427105f462>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=f6db679b-04a8-41e6-b045-36cef16a9fda class="ember-view activity-label" aria-label="Challenge activity 18.2.1: Calling a recursive function. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/2?content_resource_id=122089320">
+ 18.2.1: Calling a recursive function.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cc29b8ef-d642-4ab9-bfd8-36fd7affc55f>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1716 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1716 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1716>
+ <a id=ember1717 class="ember-view section-title-link" canonical_section_guid=518775d7-61a1-c878-81d0-db136990b1b1c canonical_section_id=29520006 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/3>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 18.3
+ Recursive algorithm: Search
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember1718 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1716 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1758 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=e64f9d42-357d-43b7-a694-be5d77ab44f4>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=fae93908-3cea-4a52-aa06-e5c875c64520 class="ember-view activity-label" aria-label="Participation activity 18.3.1: Binary search: A well-known recursive algorithm. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/3?content_resource_id=122089324">
+ 18.3.1: Binary search: A well-known recursive algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f732571b-0837-44dc-becf-a26dfa7ec88c>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fae93908-3cea-4a52-aa06-e5c875c64520 class="ember-view activity-label" aria-label="Participation activity 18.3.2: Binary search tree tool. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/3?content_resource_id=122089329">
+ 18.3.2: Binary search tree tool.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f732571b-0837-44dc-becf-a26dfa7ec88c>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fae93908-3cea-4a52-aa06-e5c875c64520 class="ember-view activity-label" aria-label="Participation activity 18.3.3: Recursive search algorithm. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/3?content_resource_id=122089333">
+ 18.3.3: Recursive search algorithm.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f732571b-0837-44dc-becf-a26dfa7ec88c>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=fae93908-3cea-4a52-aa06-e5c875c64520 class="ember-view activity-label" aria-label="Participation activity 18.3.4: Recursive calls. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/3?content_resource_id=122089334">
+ 18.3.4: Recursive calls.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f732571b-0837-44dc-becf-a26dfa7ec88c>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=ff0f3a0a-fb57-44f0-8702-90ecbff1b877>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=ffac5cb2-8238-49be-a562-b3721528ce28 class="ember-view activity-label" aria-label="Challenge activity 18.3.1: Enter the output of binary search. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/3?content_resource_id=122089335">
+ 18.3.1: Enter the output of binary search.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f139a15f-32ee-4f3f-be0d-a63c5fe932a8>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item challenge">
+ <a id=ffac5cb2-8238-49be-a562-b3721528ce28 class="ember-view activity-label" aria-label="Challenge activity 18.3.2: Searching for a letter. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/3?content_resource_id=122089337">
+ 18.3.2: Searching for a letter.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f139a15f-32ee-4f3f-be0d-a63c5fe932a8>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item challenge">
+ <a id=ffac5cb2-8238-49be-a562-b3721528ce28 class="ember-view activity-label" aria-label="Challenge activity 18.3.3: Recursive algorithm: Search. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/3?content_resource_id=122640193">
+ 18.3.3: Recursive algorithm: Search.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f139a15f-32ee-4f3f-be0d-a63c5fe932a8>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1719 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1719 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1719>
+ <a id=ember1720 class="ember-view section-title-link" canonical_section_guid=a7da9697-4dcd-6716-31bb-db2c077f9d69c canonical_section_id=29520007 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/4>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 18.4
+ Adding output statements for debugging
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember1721 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1719 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1759 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=f4735622-dff6-4966-8276-1dee9ffa66b8>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=c21b06dc-234c-4e59-99d0-db1d00d18518 class="ember-view activity-label" aria-label="Participation activity 18.4.1: Recursive debug statements. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/4?content_resource_id=122089341">
+ 18.4.1: Recursive debug statements.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e54c1a71-399d-43bc-b81f-e0179072bf84>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=e156fd8d-c023-4b27-b81d-bbc67a6a489b>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=fe0cd8a9-6653-476d-aba0-4fa994f23f1a class="ember-view activity-label" aria-label="Challenge activity 18.4.1: Adding output statements for debugging. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/4?content_resource_id=123626270">
+ 18.4.1: Adding output statements for debugging.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=dd6d8c73-3b96-4ca2-9fb0-87259e100bbf>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1722 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1722 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1722>
+ <a id=ember1723 class="ember-view section-title-link" canonical_section_guid=e42f7266-0151-d535-48bf-7b5946152decc canonical_section_id=29520008 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/5>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 18.5
+ Creating a recursive function
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember1724 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1722 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1760 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=e5a3860a-5d67-4ea6-b551-9e13c31e8a6d>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=d511d951-8531-485e-a420-d977a2bf7a8c class="ember-view activity-label" aria-label="Participation activity 18.5.1: Writing a recursive function for factorial: First write the base case, then add the recursive case. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/5?content_resource_id=122089344">
+ 18.5.1: Writing a recursive function for factorial: First write the base case, then add the recursive case.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e44ac0f4-cc1c-40a6-bb55-7370e5baf93f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d511d951-8531-485e-a420-d977a2bf7a8c class="ember-view activity-label" aria-label="Participation activity 18.5.2: Creating recursion. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/5?content_resource_id=122089346">
+ 18.5.2: Creating recursion.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e44ac0f4-cc1c-40a6-bb55-7370e5baf93f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d511d951-8531-485e-a420-d977a2bf7a8c class="ember-view activity-label" aria-label="Participation activity 18.5.3: When recursion is appropriate. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/5?content_resource_id=122089349">
+ 18.5.3: When recursion is appropriate.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e44ac0f4-cc1c-40a6-bb55-7370e5baf93f>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=fce06ba1-a02b-4299-aede-fd222054aadd>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=cbe5468a-cea5-4ea3-9f97-5dfcb2721166 class="ember-view activity-label" aria-label="Challenge activity 18.5.1: Output smileys. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/5?content_resource_id=122581172">
+ 18.5.1: Output smileys.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c9e8fc34-cc68-48f9-b92a-9d9d20875f47>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item challenge">
+ <a id=cbe5468a-cea5-4ea3-9f97-5dfcb2721166 class="ember-view activity-label" aria-label="Challenge activity 18.5.2: Creating a recursive function. 3 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/5?content_resource_id=123377533">
+ 18.5.2: Creating a recursive function.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c9e8fc34-cc68-48f9-b92a-9d9d20875f47>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1725 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1725 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1725>
+ <a id=ember1726 class="ember-view section-title-link" canonical_section_guid=6d0a50df-e485-b0e5-5ad2-71446731d61ec canonical_section_id=29520009 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/6>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 18.6
+ Recursive math functions
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember1727 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1725 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1761 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=d2e7075d-5b2d-46ff-9c47-d970ae912ade>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=d308a8bd-5c07-4862-8689-bd9e643e7e50 class="ember-view activity-label" aria-label="Participation activity 18.6.1: Recursive GCD example. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/6?content_resource_id=122089360">
+ 18.6.1: Recursive GCD example.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=f6d18a38-f665-4361-aae7-39b240fb01c7>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=e1a3dbe3-9605-46bb-98ae-baa0df53f094>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=c9f2b49e-f703-4f1f-a8e5-8b28727e4cce class="ember-view activity-label" aria-label="Challenge activity 18.6.1: Writing a recursive math function. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/6?content_resource_id=122089362">
+ 18.6.1: Writing a recursive math function.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=c156b590-87eb-4284-89ed-2535f1dadaa3>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1728 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1728 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1728>
+ <a id=ember1729 class="ember-view section-title-link" canonical_section_guid=53029eae-7b27-7ce2-5c02-32e10eb3d353c canonical_section_id=29520010 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/7>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 18.7
+ Recursive exploration of all possibilities
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="challenges 0% complete participations 0% complete " id=ember1730 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ <div class=resource-icon>
+ <div role=img aria-label="Challenge completion rate:" class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1728 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1762 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=fac8e229-a971-45fd-a128-56e947d2c185>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=d00ac295-c02b-48f5-9abe-2d02faddaf70 class="ember-view activity-label" aria-label="Participation activity 18.7.1: Exploring all possibilities viewed as a tree of choices. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/7?content_resource_id=122089366">
+ 18.7.1: Exploring all possibilities viewed as a tree of choices.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cd5cae6e-0783-45ba-b11f-1cf864bcb500>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d00ac295-c02b-48f5-9abe-2d02faddaf70 class="ember-view activity-label" aria-label="Participation activity 18.7.2: Letter scramble. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/7?content_resource_id=122089369">
+ 18.7.2: Letter scramble.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cd5cae6e-0783-45ba-b11f-1cf864bcb500>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d00ac295-c02b-48f5-9abe-2d02faddaf70 class="ember-view activity-label" aria-label="Participation activity 18.7.3: All letter permutations. 6 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/7?content_resource_id=122089373">
+ 18.7.3: All letter permutations.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cd5cae6e-0783-45ba-b11f-1cf864bcb500>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=d00ac295-c02b-48f5-9abe-2d02faddaf70 class="ember-view activity-label" aria-label="Participation activity 18.7.4: Recursive exploration. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/7?content_resource_id=122089377">
+ 18.7.4: Recursive exploration.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=cd5cae6e-0783-45ba-b11f-1cf864bcb500>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Challenge activity" class="activity-group-header challenge" id=fe1efc5f-2a27-429e-96ff-a9d15c4e3b03>
+ <div role=img class="zb-chevron challenge filled extra-small">
+ <span class=zb-chevron-letter>C</span>
+</div>
+ Challenge activities
+ </h5>
+ <ul class="activity-list challenge">
+ <li class="activity-list-item challenge">
+ <a id=f7445281-a092-48da-8008-a7ba7e3d0007 class="ember-view activity-label" aria-label="Challenge activity 18.7.1: Recursive exploration of all possibilities. 2 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/7?content_resource_id=122089379">
+ 18.7.1: Recursive exploration of all possibilities.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=fe72eed0-49ba-4c17-b6c7-5393027c1c87>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item challenge">
+ <a id=f7445281-a092-48da-8008-a7ba7e3d0007 class="ember-view activity-label" aria-label="Challenge activity 18.7.2: Recursive exploration. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/7?content_resource_id=122089380">
+ 18.7.2: Recursive exploration.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=fe72eed0-49ba-4c17-b6c7-5393027c1c87>
+ <div class=parts>
+ <div role=img class="zb-chevron challenge fade filled small">
+</div>
+ </div>
+ <div class="percentage challenge">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1731 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1731 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1731>
+ <a id=ember1732 class="ember-view section-title-link" canonical_section_guid=dd963cbc-60c9-24b7-bc0c-d25d136e71dac canonical_section_id=29520011 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/8>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 18.8
+ Stack overflow
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="participations 0% complete " id=ember1733 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ <div class=resource-icon>
+ <div role=img aria-label="Participation completion rate:" class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ </div>
+ 0%
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1731 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1763 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Participation activity" class="activity-group-header participation" id=e7116247-d288-4add-97da-d49fbe37159a>
+ <div role=img class="zb-chevron participation filled extra-small">
+ <span class=zb-chevron-letter>P</span>
+</div>
+ Participation activities
+ </h5>
+ <ul class="activity-list participation">
+ <li class="activity-list-item participation">
+ <a id=feb0935a-36f8-412a-b493-d07ef7ddfe9f class="ember-view activity-label" aria-label="Participation activity 18.8.1: Recursion causing stack overflow. 1 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/8?content_resource_id=122089382">
+ 18.8.1: Recursion causing stack overflow.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e4990a84-a1c4-44d4-998e-62b82477aebd>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ <li class="activity-list-item participation">
+ <a id=feb0935a-36f8-412a-b493-d07ef7ddfe9f class="ember-view activity-label" aria-label="Participation activity 18.8.2: Stack overflow. 4 total parts, 0 completed, 0% overall completed" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/8?content_resource_id=122089384">
+ 18.8.2: Stack overflow.
+ </a>
+ <div aria-hidden=true class=parts-and-percentage id=e4990a84-a1c4-44d4-998e-62b82477aebd>
+ <div class=parts>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ <div role=img class="zb-chevron participation fade filled small">
+</div>
+ </div>
+ <div class="percentage participation">
+ 0%
+ </div>
+ </div>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1734 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1734 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1734>
+ <a id=ember1735 class="ember-view section-title-link" canonical_section_guid=d9ad61bc-d282-4158-8b48-77f20b0efcacc canonical_section_id=29520012 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/9>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 18.9
+ C example: Recursively output permutations
+ </span>
+ </div>
+ <div class=section-labels>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label id=ember1736 class="toc-item-action section-reporting-expand-button ember-view"> <div class=no-activities>
+ No points
+ </div>
+ </div>
+ </div>
+</div></li>
+ <li id=ember1737 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1737 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1737>
+ <a id=ember1738 class="ember-view section-title-link" canonical_section_guid=07b65573-e14c-4e19-b965-c87d39efa75a canonical_section_id=28886296 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/10>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 18.10
+ LAB: Fibonacci sequence (recursion)
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1739 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1737 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1764 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=ead175ff-baa3-4b87-b7f1-9f3853d75a03>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=f1f1e575-6a39-410c-8a2e-0e6fdc076303 class="ember-view activity-label" aria-label="Lab activity 10.18: LAB: Fibonacci sequence (recursion) Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/10?content_resource_id=122090118">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1740 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1740 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1740>
+ <a id=ember1741 class="ember-view section-title-link" canonical_section_guid=54573d0a-935a-41f6-bfbb-bf4c4bfd14aa canonical_section_id=28886297 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/11>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 18.11
+ LAB: All permutations of names
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1742 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1740 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1765 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=d3cf9a61-7fec-4f21-a31a-e6697d006995>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=c1fa7821-94fb-460c-9068-7aedddda2654 class="ember-view activity-label" aria-label="Lab activity 11.18: LAB: All permutations of names Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/11?content_resource_id=122090119">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1743 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1743 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1743>
+ <a id=ember1744 class="ember-view section-title-link" canonical_section_guid=f8316780-05e6-45b6-a73f-dc56a7642d94 canonical_section_id=28886298 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/12>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 18.12
+ LAB: Number pattern
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1745 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1743 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1766 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=e022cad9-a5e7-4bad-a643-feded3dfec38>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=d221f1a1-fa3b-47c1-a137-708df78064f4 class="ember-view activity-label" aria-label="Lab activity 12.18: LAB: Number pattern Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/12?content_resource_id=122090120">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1746 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1746 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1746>
+ <a id=ember1747 class="ember-view section-title-link" canonical_section_guid=59d0c5de-c080-4498-8eff-f2189a4163a4 canonical_section_id=28886299 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/13>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 18.13
+ LAB: Count the digits
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1748 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1746 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1767 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=c143919e-2abc-4fb8-8bc1-7bd8b3bf259e>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=ef6783a4-5d5b-4171-95ca-57ad8d3a5e61 class="ember-view activity-label" aria-label="Lab activity 13.18: LAB: Count the digits Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/13?content_resource_id=122090121">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1749 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1749 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1749>
+ <a id=ember1750 class="ember-view section-title-link" canonical_section_guid=1d6ce77f-e19a-4eb6-852e-fc4b7efb09e6 canonical_section_id=28886300 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/14>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 18.14
+ LAB: Drawing a right side up triangle
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1751 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1749 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1768 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=fa06de04-9c4a-4e94-b0ed-8786b5539c5a>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=f952d129-7eed-419b-8bad-66953020343a class="ember-view activity-label" aria-label="Lab activity 14.18: LAB: Drawing a right side up triangle Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/14?content_resource_id=122090122">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ <li id=ember1752 class="js-draggableObject draggable-object ember-view section-item"><div class=toc-item>
+ <div class="section-item-controls item-controls">
+ <div class="zb-checkbox selection-checkbox secondary right">
+ <input class=zb-checkbox-input aria-labelledby=section-title-ember1752 type=checkbox value=on>
+ </div>
+ <div class=section-title-link-container id=section-title-ember1752>
+ <a id=ember1753 class="ember-view section-title-link" canonical_section_guid=b0e5f849-9a41-4883-a947-db666e958729 canonical_section_id=28886301 href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/15>
+ <div class=section-info>
+ <div class=section-title-info>
+ <span class=section-title>
+ 18.15
+ LAB: Output a linked list
+ </span>
+ </div>
+ <div class=section-labels>
+ <span class=section-label-hidden>Unpublished</span>
+ <span class=section-label-lab>
+ Lab
+ </span>
+ </div>
+ </div>
+ </a>
+ </div>
+ <div aria-label="Labs 0% complete " id=ember1754 class="toc-item-action section-reporting-expand-button ember-view"> <div class="columnar-scores section">
+ <div class="zylabs score">
+ <div class=resource-icon>
+ <div role=img aria-label="zyLab completion rate:" class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ </div>
+ 0%
+ </div>
+ <div class="challenge score">
+ </div>
+ <div class="participation score">
+ </div>
+ </div>
+ <button aria-busy=false class="zb-button grey right no-padding" aria-describedby=section-title-ember1752 aria-expanded=true type=button><i aria-label=expand_less class="zb-icon material-symbols-outlined med grey" role=img aria-hidden=true>
+ expand_less
+</i></button><span class=zb-button-live-region-host>
+ <span aria-atomic=true aria-live=polite class=visually-hidden></span>
+</span>
+</div>
+ </div>
+ <div id=ember1769 class=ember-view><div class="section-item-detail section-activity-details">
+ <section class=activity-group-list>
+ <h5 aria-hidden=true aria-label="Lab activity" class="activity-group-header zylabs" id=c1ccba13-bc8e-4834-b57c-10eb8ec0f06d>
+ <div role=img class="zb-chevron lab filled extra-small">
+ <span class=zb-chevron-letter>L</span>
+</div>
+ Lab activities
+ </h5>
+ <ul class="activity-list zylabs">
+ <li class="activity-list-item zylabs">
+ <a id=ebc13b95-73d0-4867-976b-87ceaba98c0c class="ember-view activity-label" aria-label="Lab activity 15.18: LAB: Output a linked list Student score: 0 / 10 points" href="https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/section/15?content_resource_id=122090123">
+ <div class=zylab-total-score>
+ <div class=title>
+ User
+ score:
+ </div>
+ <div class="score pl-5">
+ 0
+ /
+ 10 points
+ </div>
+ </div>
+ </a>
+ </li>
+ </ul>
+ </section>
+</div></div>
+</div></li>
+ </ul>
+ </div>
+ <div class="toc-header-common chapter-actions">
+ <div class=chapter-item-content>
+ <a id=ember1755 class="ember-view action" target=_blank href=https://learn.zybooks.com/zybook/CUNYCSC211AzharFall2026/chapter/18/print>
+ <i aria-label=print class="zb-icon material-symbols-outlined med blue item-bullet" role=img aria-hidden=true>
+ print
+</i>
+ <span class=title>Print chapter</span>
+ </a>
+ </div>
+ </div>
+</div></li>
+ </ul></body></html>
